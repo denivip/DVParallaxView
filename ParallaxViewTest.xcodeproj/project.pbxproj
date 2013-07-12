@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		743AFC8B178E998700083E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743AFC8A178E997F00083E50 /* Main.storyboard */; };
+		743AFC8D178EBEEB00083E50 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743AFC8C178EBEEB00083E50 /* CoreMotion.framework */; };
+		744841B9178E989B0073F2C3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 744841B6178E989B0073F2C3 /* Default.png */; };
+		744841BA178E989B0073F2C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 744841B7178E989B0073F2C3 /* Default-568h@2x.png */; };
+		744841BB178E989B0073F2C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 744841B8178E989B0073F2C3 /* Default@2x.png */; };
+		7454BDF2178E8CCC00233B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF1178E8CCC00233B14 /* Foundation.framework */; };
+		7454BDF4178E8CCC00233B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */; };
+		7454BDF6178E8CCC00233B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF5178E8CCC00233B14 /* UIKit.framework */; };
+		7454BDFC178E8CCC00233B14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7454BDFA178E8CCC00233B14 /* InfoPlist.strings */; };
+		7454BDFE178E8CCC00233B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BDFD178E8CCC00233B14 /* main.m */; };
+		7454BE02178E8CCC00233B14 /* DVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE01178E8CCC00233B14 /* DVAppDelegate.m */; };
+		7454BE08178E8CCC00233B14 /* DVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE07178E8CCC00233B14 /* DVViewController.m */; };
+		7454BE11178E8CCC00233B14 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BE10178E8CCC00233B14 /* XCTest.framework */; };
+		7454BE12178E8CCC00233B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF1178E8CCC00233B14 /* Foundation.framework */; };
+		7454BE13178E8CCC00233B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF5178E8CCC00233B14 /* UIKit.framework */; };
+		7454BE1B178E8CCC00233B14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7454BE19178E8CCC00233B14 /* InfoPlist.strings */; };
+		7454BE1D178E8CCC00233B14 /* ParallaxViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE1C178E8CCC00233B14 /* ParallaxViewTestTests.m */; };
+		7454BE28178E8D0C00233B14 /* DVParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE27178E8D0C00233B14 /* DVParallaxView.m */; };
+		7454BE2F178E962000233B14 /* ios7background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7454BE2D178E962000233B14 /* ios7background.png */; };
+		7454BE30178E962000233B14 /* ios7background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7454BE2E178E962000233B14 /* ios7background@2x.png */; };
+		7499C99517902E0C00564428 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 7499C99217902E0C00564428 /* Flickr.m */; };
+		7499C99617902E0C00564428 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 7499C99417902E0C00564428 /* FlickrPhoto.m */; };
+		7499C999179035B700564428 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7499C998179035B700564428 /* FlickrPhotoCell.m */; };
+		74EA6075178FFC67000EFD9B /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA606E178FFC67000EFD9B /* earth.png */; };
+		74EA6076178FFC67000EFD9B /* earth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA606F178FFC67000EFD9B /* earth@2x.png */; };
+		74EA6078178FFC67000EFD9B /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6071178FFC67000EFD9B /* moon.png */; };
+		74EA6079178FFC67000EFD9B /* moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6072178FFC67000EFD9B /* moon@2x.png */; };
+		74EA607A178FFC67000EFD9B /* nebula.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6073178FFC67000EFD9B /* nebula.png */; };
+		74EA607B178FFC67000EFD9B /* nebula@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6074178FFC67000EFD9B /* nebula@2x.png */; };
+		74EA607E178FFCBC000EFD9B /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA607C178FFCBC000EFD9B /* galaxy.png */; };
+		74EA607F178FFCBC000EFD9B /* galaxy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA607D178FFCBC000EFD9B /* galaxy@2x.png */; };
+		74EA60821790106B000EFD9B /* galaxy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA60801790106B000EFD9B /* galaxy2.png */; };
+		74EA60831790106B000EFD9B /* galaxy2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA60811790106B000EFD9B /* galaxy2@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7454BE14178E8CCC00233B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7454BDE6178E8CCB00233B14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7454BDED178E8CCC00233B14;
+			remoteInfo = ParallaxViewTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		743AFC8A178E997F00083E50 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		743AFC8C178EBEEB00083E50 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		744841B6178E989B0073F2C3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../AirPlayTest/AirPlayTest/Default.png; sourceTree = "<group>"; };
+		744841B7178E989B0073F2C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../AirPlayTest/AirPlayTest/Default-568h@2x.png"; sourceTree = "<group>"; };
+		744841B8178E989B0073F2C3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../AirPlayTest/AirPlayTest/Default@2x.png"; sourceTree = "<group>"; };
+		7454BDEE178E8CCC00233B14 /* ParallaxViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7454BDF1178E8CCC00233B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7454BDF5178E8CCC00233B14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7454BDF9178E8CCC00233B14 /* ParallaxViewTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParallaxViewTest-Info.plist"; sourceTree = "<group>"; };
+		7454BDFB178E8CCC00233B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7454BDFD178E8CCC00233B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7454BDFF178E8CCC00233B14 /* ParallaxViewTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParallaxViewTest-Prefix.pch"; sourceTree = "<group>"; };
+		7454BE00178E8CCC00233B14 /* DVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVAppDelegate.h; sourceTree = "<group>"; };
+		7454BE01178E8CCC00233B14 /* DVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVAppDelegate.m; sourceTree = "<group>"; };
+		7454BE06178E8CCC00233B14 /* DVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVViewController.h; sourceTree = "<group>"; };
+		7454BE07178E8CCC00233B14 /* DVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVViewController.m; sourceTree = "<group>"; };
+		7454BE0F178E8CCC00233B14 /* ParallaxViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7454BE10178E8CCC00233B14 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7454BE18178E8CCC00233B14 /* ParallaxViewTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParallaxViewTestTests-Info.plist"; sourceTree = "<group>"; };
+		7454BE1A178E8CCC00233B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7454BE1C178E8CCC00233B14 /* ParallaxViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallaxViewTestTests.m; sourceTree = "<group>"; };
+		7454BE26178E8D0C00233B14 /* DVParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVParallaxView.h; sourceTree = "<group>"; };
+		7454BE27178E8D0C00233B14 /* DVParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVParallaxView.m; sourceTree = "<group>"; };
+		7454BE2D178E962000233B14 /* ios7background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios7background.png; path = ParallaxViewTest/ios7background.png; sourceTree = "<group>"; };
+		7454BE2E178E962000233B14 /* ios7background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7background@2x.png"; path = "ParallaxViewTest/ios7background@2x.png"; sourceTree = "<group>"; };
+		7499C99117902E0C00564428 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
+		7499C99217902E0C00564428 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
+		7499C99317902E0C00564428 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		7499C99417902E0C00564428 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
+		7499C997179035B700564428 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
+		7499C998179035B700564428 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
+		74EA606E178FFC67000EFD9B /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earth.png; path = ParallaxViewTest/earth.png; sourceTree = "<group>"; };
+		74EA606F178FFC67000EFD9B /* earth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "earth@2x.png"; path = "ParallaxViewTest/earth@2x.png"; sourceTree = "<group>"; };
+		74EA6071178FFC67000EFD9B /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moon.png; path = ParallaxViewTest/moon.png; sourceTree = "<group>"; };
+		74EA6072178FFC67000EFD9B /* moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "moon@2x.png"; path = "ParallaxViewTest/moon@2x.png"; sourceTree = "<group>"; };
+		74EA6073178FFC67000EFD9B /* nebula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nebula.png; path = ParallaxViewTest/nebula.png; sourceTree = "<group>"; };
+		74EA6074178FFC67000EFD9B /* nebula@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nebula@2x.png"; path = "ParallaxViewTest/nebula@2x.png"; sourceTree = "<group>"; };
+		74EA607C178FFCBC000EFD9B /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = galaxy.png; path = ParallaxViewTest/galaxy.png; sourceTree = "<group>"; };
+		74EA607D178FFCBC000EFD9B /* galaxy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "galaxy@2x.png"; path = "ParallaxViewTest/galaxy@2x.png"; sourceTree = "<group>"; };
+		74EA60801790106B000EFD9B /* galaxy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = galaxy2.png; path = ParallaxViewTest/galaxy2.png; sourceTree = "<group>"; };
+		74EA60811790106B000EFD9B /* galaxy2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "galaxy2@2x.png"; path = "ParallaxViewTest/galaxy2@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7454BDEB178E8CCC00233B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743AFC8D178EBEEB00083E50 /* CoreMotion.framework in Frameworks */,
+				7454BDF4178E8CCC00233B14 /* CoreGraphics.framework in Frameworks */,
+				7454BDF6178E8CCC00233B14 /* UIKit.framework in Frameworks */,
+				7454BDF2178E8CCC00233B14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7454BE0C178E8CCC00233B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7454BE11178E8CCC00233B14 /* XCTest.framework in Frameworks */,
+				7454BE13178E8CCC00233B14 /* UIKit.framework in Frameworks */,
+				7454BE12178E8CCC00233B14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7454BDE5178E8CCB00233B14 = {
+			isa = PBXGroup;
+			children = (
+				7454BE29178E92A300233B14 /* images */,
+				7454BDF7178E8CCC00233B14 /* ParallaxViewTest */,
+				7454BE16178E8CCC00233B14 /* ParallaxViewTestTests */,
+				7454BDF0178E8CCC00233B14 /* Frameworks */,
+				7454BDEF178E8CCC00233B14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7454BDEF178E8CCC00233B14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7454BDEE178E8CCC00233B14 /* ParallaxViewTest.app */,
+				7454BE0F178E8CCC00233B14 /* ParallaxViewTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7454BDF0178E8CCC00233B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				743AFC8C178EBEEB00083E50 /* CoreMotion.framework */,
+				7454BDF1178E8CCC00233B14 /* Foundation.framework */,
+				7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */,
+				7454BDF5178E8CCC00233B14 /* UIKit.framework */,
+				7454BE10178E8CCC00233B14 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7454BDF7178E8CCC00233B14 /* ParallaxViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				7499C99017902E0C00564428 /* Flickr */,
+				743AFC8A178E997F00083E50 /* Main.storyboard */,
+				7454BE00178E8CCC00233B14 /* DVAppDelegate.h */,
+				7454BE01178E8CCC00233B14 /* DVAppDelegate.m */,
+				7454BE06178E8CCC00233B14 /* DVViewController.h */,
+				7454BE07178E8CCC00233B14 /* DVViewController.m */,
+				7454BDF8178E8CCC00233B14 /* Supporting Files */,
+				7454BE26178E8D0C00233B14 /* DVParallaxView.h */,
+				7454BE27178E8D0C00233B14 /* DVParallaxView.m */,
+			);
+			path = ParallaxViewTest;
+			sourceTree = "<group>";
+		};
+		7454BDF8178E8CCC00233B14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7454BDF9178E8CCC00233B14 /* ParallaxViewTest-Info.plist */,
+				7454BDFA178E8CCC00233B14 /* InfoPlist.strings */,
+				7454BDFD178E8CCC00233B14 /* main.m */,
+				7454BDFF178E8CCC00233B14 /* ParallaxViewTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7454BE16178E8CCC00233B14 /* ParallaxViewTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				7454BE1C178E8CCC00233B14 /* ParallaxViewTestTests.m */,
+				7454BE17178E8CCC00233B14 /* Supporting Files */,
+			);
+			path = ParallaxViewTestTests;
+			sourceTree = "<group>";
+		};
+		7454BE17178E8CCC00233B14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7454BE18178E8CCC00233B14 /* ParallaxViewTestTests-Info.plist */,
+				7454BE19178E8CCC00233B14 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7454BE29178E92A300233B14 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				744841B6178E989B0073F2C3 /* Default.png */,
+				744841B7178E989B0073F2C3 /* Default-568h@2x.png */,
+				744841B8178E989B0073F2C3 /* Default@2x.png */,
+				74EA60801790106B000EFD9B /* galaxy2.png */,
+				74EA60811790106B000EFD9B /* galaxy2@2x.png */,
+				74EA607C178FFCBC000EFD9B /* galaxy.png */,
+				74EA607D178FFCBC000EFD9B /* galaxy@2x.png */,
+				74EA606E178FFC67000EFD9B /* earth.png */,
+				74EA606F178FFC67000EFD9B /* earth@2x.png */,
+				74EA6071178FFC67000EFD9B /* moon.png */,
+				74EA6072178FFC67000EFD9B /* moon@2x.png */,
+				74EA6073178FFC67000EFD9B /* nebula.png */,
+				74EA6074178FFC67000EFD9B /* nebula@2x.png */,
+				7454BE2D178E962000233B14 /* ios7background.png */,
+				7454BE2E178E962000233B14 /* ios7background@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		7499C99017902E0C00564428 /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				7499C99117902E0C00564428 /* Flickr.h */,
+				7499C99217902E0C00564428 /* Flickr.m */,
+				7499C99317902E0C00564428 /* FlickrPhoto.h */,
+				7499C99417902E0C00564428 /* FlickrPhoto.m */,
+				7499C997179035B700564428 /* FlickrPhotoCell.h */,
+				7499C998179035B700564428 /* FlickrPhotoCell.m */,
+			);
+			path = Flickr;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7454BDED178E8CCC00233B14 /* ParallaxViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7454BE20178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTest" */;
+			buildPhases = (
+				7454BDEA178E8CCC00233B14 /* Sources */,
+				7454BDEB178E8CCC00233B14 /* Frameworks */,
+				7454BDEC178E8CCC00233B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParallaxViewTest;
+			productName = ParallaxViewTest;
+			productReference = 7454BDEE178E8CCC00233B14 /* ParallaxViewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7454BE0E178E8CCC00233B14 /* ParallaxViewTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7454BE23178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTestTests" */;
+			buildPhases = (
+				7454BE0B178E8CCC00233B14 /* Sources */,
+				7454BE0C178E8CCC00233B14 /* Frameworks */,
+				7454BE0D178E8CCC00233B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7454BE15178E8CCC00233B14 /* PBXTargetDependency */,
+			);
+			name = ParallaxViewTestTests;
+			productName = ParallaxViewTestTests;
+			productReference = 7454BE0F178E8CCC00233B14 /* ParallaxViewTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7454BDE6178E8CCB00233B14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DV;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "DENIVIP Group";
+				TargetAttributes = {
+					7454BDED178E8CCC00233B14 = {
+						DevelopmentTeam = SQ676DBDCT;
+					};
+					7454BE0E178E8CCC00233B14 = {
+						TestTargetID = 7454BDED178E8CCC00233B14;
+					};
+				};
+			};
+			buildConfigurationList = 7454BDE9178E8CCB00233B14 /* Build configuration list for PBXProject "ParallaxViewTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7454BDE5178E8CCB00233B14;
+			productRefGroup = 7454BDEF178E8CCC00233B14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7454BDED178E8CCC00233B14 /* ParallaxViewTest */,
+				7454BE0E178E8CCC00233B14 /* ParallaxViewTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7454BDEC178E8CCC00233B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74EA607A178FFC67000EFD9B /* nebula.png in Resources */,
+				74EA607F178FFCBC000EFD9B /* galaxy@2x.png in Resources */,
+				74EA6075178FFC67000EFD9B /* earth.png in Resources */,
+				74EA6079178FFC67000EFD9B /* moon@2x.png in Resources */,
+				743AFC8B178E998700083E50 /* Main.storyboard in Resources */,
+				7454BDFC178E8CCC00233B14 /* InfoPlist.strings in Resources */,
+				74EA60831790106B000EFD9B /* galaxy2@2x.png in Resources */,
+				74EA60821790106B000EFD9B /* galaxy2.png in Resources */,
+				7454BE30178E962000233B14 /* ios7background@2x.png in Resources */,
+				7454BE2F178E962000233B14 /* ios7background.png in Resources */,
+				74EA607E178FFCBC000EFD9B /* galaxy.png in Resources */,
+				74EA6076178FFC67000EFD9B /* earth@2x.png in Resources */,
+				74EA6078178FFC67000EFD9B /* moon.png in Resources */,
+				744841B9178E989B0073F2C3 /* Default.png in Resources */,
+				74EA607B178FFC67000EFD9B /* nebula@2x.png in Resources */,
+				744841BA178E989B0073F2C3 /* Default-568h@2x.png in Resources */,
+				744841BB178E989B0073F2C3 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7454BE0D178E8CCC00233B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7454BE1B178E8CCC00233B14 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7454BDEA178E8CCC00233B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7499C999179035B700564428 /* FlickrPhotoCell.m in Sources */,
+				7499C99517902E0C00564428 /* Flickr.m in Sources */,
+				7454BE02178E8CCC00233B14 /* DVAppDelegate.m in Sources */,
+				7454BE28178E8D0C00233B14 /* DVParallaxView.m in Sources */,
+				7499C99617902E0C00564428 /* FlickrPhoto.m in Sources */,
+				7454BE08178E8CCC00233B14 /* DVViewController.m in Sources */,
+				7454BDFE178E8CCC00233B14 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7454BE0B178E8CCC00233B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7454BE1D178E8CCC00233B14 /* ParallaxViewTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7454BE15178E8CCC00233B14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7454BDED178E8CCC00233B14 /* ParallaxViewTest */;
+			targetProxy = 7454BE14178E8CCC00233B14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7454BDFA178E8CCC00233B14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7454BDFB178E8CCC00233B14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7454BE19178E8CCC00233B14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7454BE1A178E8CCC00233B14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7454BE1E178E8CCC00233B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7454BE1F178E8CCC00233B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7454BE21178E8CCC00233B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mihail Grushin (NVD9NMZMNS)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
+				INFOPLIST_FILE = "ParallaxViewTest/ParallaxViewTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7454BE22178E8CCC00233B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mihail Grushin (NVD9NMZMNS)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
+				INFOPLIST_FILE = "ParallaxViewTest/ParallaxViewTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7454BE24178E8CCC00233B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParallaxViewTest.app/ParallaxViewTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParallaxViewTestTests/ParallaxViewTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7454BE25178E8CCC00233B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParallaxViewTest.app/ParallaxViewTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
+				INFOPLIST_FILE = "ParallaxViewTestTests/ParallaxViewTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7454BDE9178E8CCB00233B14 /* Build configuration list for PBXProject "ParallaxViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7454BE1E178E8CCC00233B14 /* Debug */,
+				7454BE1F178E8CCC00233B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7454BE20178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7454BE21178E8CCC00233B14 /* Debug */,
+				7454BE22178E8CCC00233B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7454BE23178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7454BE24178E8CCC00233B14 /* Debug */,
+				7454BE25178E8CCC00233B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7454BDE6178E8CCB00233B14 /* Project object */;
+}
