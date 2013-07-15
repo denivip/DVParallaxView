@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		743AFC8B178E998700083E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743AFC8A178E997F00083E50 /* Main.storyboard */; };
 		743AFC8D178EBEEB00083E50 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743AFC8C178EBEEB00083E50 /* CoreMotion.framework */; };
-		744841B9178E989B0073F2C3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 744841B6178E989B0073F2C3 /* Default.png */; };
-		744841BA178E989B0073F2C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 744841B7178E989B0073F2C3 /* Default-568h@2x.png */; };
-		744841BB178E989B0073F2C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 744841B8178E989B0073F2C3 /* Default@2x.png */; };
 		7454BDF2178E8CCC00233B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF1178E8CCC00233B14 /* Foundation.framework */; };
 		7454BDF4178E8CCC00233B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */; };
 		7454BDF6178E8CCC00233B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF5178E8CCC00233B14 /* UIKit.framework */; };
@@ -27,9 +24,49 @@
 		7454BE28178E8D0C00233B14 /* DVParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE27178E8D0C00233B14 /* DVParallaxView.m */; };
 		7454BE2F178E962000233B14 /* ios7background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7454BE2D178E962000233B14 /* ios7background.png */; };
 		7454BE30178E962000233B14 /* ios7background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7454BE2E178E962000233B14 /* ios7background@2x.png */; };
-		7499C99517902E0C00564428 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 7499C99217902E0C00564428 /* Flickr.m */; };
-		7499C99617902E0C00564428 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 7499C99417902E0C00564428 /* FlickrPhoto.m */; };
-		7499C999179035B700564428 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7499C998179035B700564428 /* FlickrPhotoCell.m */; };
+		749FE17B1794292600249764 /* App-Store.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1531794292600249764 /* App-Store.png */; };
+		749FE17C1794292600249764 /* App-Store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1541794292600249764 /* App-Store@2x.png */; };
+		749FE17D1794292600249764 /* Calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1551794292600249764 /* Calculator.png */; };
+		749FE17E1794292600249764 /* Calculator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1561794292600249764 /* Calculator@2x.png */; };
+		749FE17F1794292600249764 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1571794292600249764 /* Calendar.png */; };
+		749FE1801794292600249764 /* Calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1581794292600249764 /* Calendar@2x.png */; };
+		749FE1811794292600249764 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1591794292600249764 /* Camera.png */; };
+		749FE1821794292600249764 /* Camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15A1794292600249764 /* Camera@2x.png */; };
+		749FE1831794292600249764 /* Clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15B1794292600249764 /* Clock.png */; };
+		749FE1841794292600249764 /* Clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15C1794292600249764 /* Clock@2x.png */; };
+		749FE1851794292600249764 /* Contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15D1794292600249764 /* Contacts.png */; };
+		749FE1861794292600249764 /* Contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15E1794292600249764 /* Contacts@2x.png */; };
+		749FE1871794292600249764 /* iPod.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15F1794292600249764 /* iPod.png */; };
+		749FE1881794292600249764 /* iPod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1601794292600249764 /* iPod@2x.png */; };
+		749FE1891794292600249764 /* iTunes.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1611794292600249764 /* iTunes.png */; };
+		749FE18A1794292600249764 /* iTunes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1621794292600249764 /* iTunes@2x.png */; };
+		749FE18B1794292600249764 /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1631794292600249764 /* Mail.png */; };
+		749FE18C1794292600249764 /* Mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1641794292600249764 /* Mail@2x.png */; };
+		749FE18D1794292600249764 /* Maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1651794292600249764 /* Maps.png */; };
+		749FE18E1794292600249764 /* Maps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1661794292600249764 /* Maps@2x.png */; };
+		749FE18F1794292600249764 /* Messages.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1671794292600249764 /* Messages.png */; };
+		749FE1901794292600249764 /* Messages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1681794292600249764 /* Messages@2x.png */; };
+		749FE1911794292600249764 /* Notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1691794292600249764 /* Notes.png */; };
+		749FE1921794292600249764 /* Notes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16A1794292600249764 /* Notes@2x.png */; };
+		749FE1931794292600249764 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16B1794292600249764 /* Phone.png */; };
+		749FE1941794292600249764 /* Phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16C1794292600249764 /* Phone@2x.png */; };
+		749FE1951794292600249764 /* Photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16D1794292600249764 /* Photos.png */; };
+		749FE1961794292600249764 /* Photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16E1794292600249764 /* Photos@2x.png */; };
+		749FE1971794292600249764 /* Safari.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16F1794292600249764 /* Safari.png */; };
+		749FE1981794292600249764 /* Safari@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1701794292600249764 /* Safari@2x.png */; };
+		749FE1991794292600249764 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1711794292600249764 /* Settings.png */; };
+		749FE19A1794292600249764 /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1721794292600249764 /* Settings@2x.png */; };
+		749FE19B1794292600249764 /* Stocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1731794292600249764 /* Stocks.png */; };
+		749FE19C1794292600249764 /* Stocks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1741794292600249764 /* Stocks@2x.png */; };
+		749FE19D1794292600249764 /* Voice-Memos.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1751794292600249764 /* Voice-Memos.png */; };
+		749FE19E1794292600249764 /* Voice-Memos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1761794292600249764 /* Voice-Memos@2x.png */; };
+		749FE19F1794292600249764 /* Weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1771794292600249764 /* Weather.png */; };
+		749FE1A01794292600249764 /* Weather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1781794292600249764 /* Weather@2x.png */; };
+		749FE1A11794292600249764 /* YouTube.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1791794292600249764 /* YouTube.png */; };
+		749FE1A21794292600249764 /* YouTube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE17A1794292600249764 /* YouTube@2x.png */; };
+		749FE1A6179429AE00249764 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1A3179429AE00249764 /* Default-568h@2x.png */; };
+		749FE1A7179429AE00249764 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1A4179429AE00249764 /* Default.png */; };
+		749FE1A8179429AE00249764 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1A5179429AE00249764 /* Default@2x.png */; };
 		74EA6075178FFC67000EFD9B /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA606E178FFC67000EFD9B /* earth.png */; };
 		74EA6076178FFC67000EFD9B /* earth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA606F178FFC67000EFD9B /* earth@2x.png */; };
 		74EA6078178FFC67000EFD9B /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6071178FFC67000EFD9B /* moon.png */; };
@@ -55,9 +92,6 @@
 /* Begin PBXFileReference section */
 		743AFC8A178E997F00083E50 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		743AFC8C178EBEEB00083E50 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		744841B6178E989B0073F2C3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../AirPlayTest/AirPlayTest/Default.png; sourceTree = "<group>"; };
-		744841B7178E989B0073F2C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../AirPlayTest/AirPlayTest/Default-568h@2x.png"; sourceTree = "<group>"; };
-		744841B8178E989B0073F2C3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../AirPlayTest/AirPlayTest/Default@2x.png"; sourceTree = "<group>"; };
 		7454BDEE178E8CCC00233B14 /* ParallaxViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7454BDF1178E8CCC00233B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,12 +113,49 @@
 		7454BE27178E8D0C00233B14 /* DVParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVParallaxView.m; sourceTree = "<group>"; };
 		7454BE2D178E962000233B14 /* ios7background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios7background.png; path = ParallaxViewTest/ios7background.png; sourceTree = "<group>"; };
 		7454BE2E178E962000233B14 /* ios7background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7background@2x.png"; path = "ParallaxViewTest/ios7background@2x.png"; sourceTree = "<group>"; };
-		7499C99117902E0C00564428 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
-		7499C99217902E0C00564428 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
-		7499C99317902E0C00564428 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
-		7499C99417902E0C00564428 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
-		7499C997179035B700564428 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
-		7499C998179035B700564428 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
+		749FE1531794292600249764 /* App-Store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App-Store.png"; path = "ParallaxViewTest/images/App-Store.png"; sourceTree = "<group>"; };
+		749FE1541794292600249764 /* App-Store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App-Store@2x.png"; path = "ParallaxViewTest/images/App-Store@2x.png"; sourceTree = "<group>"; };
+		749FE1551794292600249764 /* Calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calculator.png; path = ParallaxViewTest/images/Calculator.png; sourceTree = "<group>"; };
+		749FE1561794292600249764 /* Calculator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Calculator@2x.png"; path = "ParallaxViewTest/images/Calculator@2x.png"; sourceTree = "<group>"; };
+		749FE1571794292600249764 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calendar.png; path = ParallaxViewTest/images/Calendar.png; sourceTree = "<group>"; };
+		749FE1581794292600249764 /* Calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Calendar@2x.png"; path = "ParallaxViewTest/images/Calendar@2x.png"; sourceTree = "<group>"; };
+		749FE1591794292600249764 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camera.png; path = ParallaxViewTest/images/Camera.png; sourceTree = "<group>"; };
+		749FE15A1794292600249764 /* Camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Camera@2x.png"; path = "ParallaxViewTest/images/Camera@2x.png"; sourceTree = "<group>"; };
+		749FE15B1794292600249764 /* Clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Clock.png; path = ParallaxViewTest/images/Clock.png; sourceTree = "<group>"; };
+		749FE15C1794292600249764 /* Clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Clock@2x.png"; path = "ParallaxViewTest/images/Clock@2x.png"; sourceTree = "<group>"; };
+		749FE15D1794292600249764 /* Contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Contacts.png; path = ParallaxViewTest/images/Contacts.png; sourceTree = "<group>"; };
+		749FE15E1794292600249764 /* Contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts@2x.png"; path = "ParallaxViewTest/images/Contacts@2x.png"; sourceTree = "<group>"; };
+		749FE15F1794292600249764 /* iPod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPod.png; path = ParallaxViewTest/images/iPod.png; sourceTree = "<group>"; };
+		749FE1601794292600249764 /* iPod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPod@2x.png"; path = "ParallaxViewTest/images/iPod@2x.png"; sourceTree = "<group>"; };
+		749FE1611794292600249764 /* iTunes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunes.png; path = ParallaxViewTest/images/iTunes.png; sourceTree = "<group>"; };
+		749FE1621794292600249764 /* iTunes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunes@2x.png"; path = "ParallaxViewTest/images/iTunes@2x.png"; sourceTree = "<group>"; };
+		749FE1631794292600249764 /* Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mail.png; path = ParallaxViewTest/images/Mail.png; sourceTree = "<group>"; };
+		749FE1641794292600249764 /* Mail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mail@2x.png"; path = "ParallaxViewTest/images/Mail@2x.png"; sourceTree = "<group>"; };
+		749FE1651794292600249764 /* Maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maps.png; path = ParallaxViewTest/images/Maps.png; sourceTree = "<group>"; };
+		749FE1661794292600249764 /* Maps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Maps@2x.png"; path = "ParallaxViewTest/images/Maps@2x.png"; sourceTree = "<group>"; };
+		749FE1671794292600249764 /* Messages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Messages.png; path = ParallaxViewTest/images/Messages.png; sourceTree = "<group>"; };
+		749FE1681794292600249764 /* Messages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Messages@2x.png"; path = "ParallaxViewTest/images/Messages@2x.png"; sourceTree = "<group>"; };
+		749FE1691794292600249764 /* Notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Notes.png; path = ParallaxViewTest/images/Notes.png; sourceTree = "<group>"; };
+		749FE16A1794292600249764 /* Notes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Notes@2x.png"; path = "ParallaxViewTest/images/Notes@2x.png"; sourceTree = "<group>"; };
+		749FE16B1794292600249764 /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Phone.png; path = ParallaxViewTest/images/Phone.png; sourceTree = "<group>"; };
+		749FE16C1794292600249764 /* Phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Phone@2x.png"; path = "ParallaxViewTest/images/Phone@2x.png"; sourceTree = "<group>"; };
+		749FE16D1794292600249764 /* Photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Photos.png; path = ParallaxViewTest/images/Photos.png; sourceTree = "<group>"; };
+		749FE16E1794292600249764 /* Photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Photos@2x.png"; path = "ParallaxViewTest/images/Photos@2x.png"; sourceTree = "<group>"; };
+		749FE16F1794292600249764 /* Safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Safari.png; path = ParallaxViewTest/images/Safari.png; sourceTree = "<group>"; };
+		749FE1701794292600249764 /* Safari@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Safari@2x.png"; path = "ParallaxViewTest/images/Safari@2x.png"; sourceTree = "<group>"; };
+		749FE1711794292600249764 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ParallaxViewTest/images/Settings.png; sourceTree = "<group>"; };
+		749FE1721794292600249764 /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings@2x.png"; path = "ParallaxViewTest/images/Settings@2x.png"; sourceTree = "<group>"; };
+		749FE1731794292600249764 /* Stocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stocks.png; path = ParallaxViewTest/images/Stocks.png; sourceTree = "<group>"; };
+		749FE1741794292600249764 /* Stocks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stocks@2x.png"; path = "ParallaxViewTest/images/Stocks@2x.png"; sourceTree = "<group>"; };
+		749FE1751794292600249764 /* Voice-Memos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Voice-Memos.png"; path = "ParallaxViewTest/images/Voice-Memos.png"; sourceTree = "<group>"; };
+		749FE1761794292600249764 /* Voice-Memos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Voice-Memos@2x.png"; path = "ParallaxViewTest/images/Voice-Memos@2x.png"; sourceTree = "<group>"; };
+		749FE1771794292600249764 /* Weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Weather.png; path = ParallaxViewTest/images/Weather.png; sourceTree = "<group>"; };
+		749FE1781794292600249764 /* Weather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Weather@2x.png"; path = "ParallaxViewTest/images/Weather@2x.png"; sourceTree = "<group>"; };
+		749FE1791794292600249764 /* YouTube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YouTube.png; path = ParallaxViewTest/images/YouTube.png; sourceTree = "<group>"; };
+		749FE17A1794292600249764 /* YouTube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "YouTube@2x.png"; path = "ParallaxViewTest/images/YouTube@2x.png"; sourceTree = "<group>"; };
+		749FE1A3179429AE00249764 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		749FE1A4179429AE00249764 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		749FE1A5179429AE00249764 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		74EA606E178FFC67000EFD9B /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earth.png; path = ParallaxViewTest/earth.png; sourceTree = "<group>"; };
 		74EA606F178FFC67000EFD9B /* earth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "earth@2x.png"; path = "ParallaxViewTest/earth@2x.png"; sourceTree = "<group>"; };
 		74EA6071178FFC67000EFD9B /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moon.png; path = ParallaxViewTest/moon.png; sourceTree = "<group>"; };
@@ -202,9 +273,10 @@
 		7454BE29178E92A300233B14 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				744841B6178E989B0073F2C3 /* Default.png */,
-				744841B7178E989B0073F2C3 /* Default-568h@2x.png */,
-				744841B8178E989B0073F2C3 /* Default@2x.png */,
+				749FE1521794291700249764 /* App icons */,
+				749FE1A3179429AE00249764 /* Default-568h@2x.png */,
+				749FE1A4179429AE00249764 /* Default.png */,
+				749FE1A5179429AE00249764 /* Default@2x.png */,
 				74EA60801790106B000EFD9B /* galaxy2.png */,
 				74EA60811790106B000EFD9B /* galaxy2@2x.png */,
 				74EA607C178FFCBC000EFD9B /* galaxy.png */,
@@ -222,17 +294,54 @@
 			sourceTree = "<group>";
 		};
 		7499C99017902E0C00564428 /* Flickr */ = {
+		749FE1521794291700249764 /* App icons */ = {
 			isa = PBXGroup;
 			children = (
-				7499C99117902E0C00564428 /* Flickr.h */,
-				7499C99217902E0C00564428 /* Flickr.m */,
-				7499C99317902E0C00564428 /* FlickrPhoto.h */,
-				7499C99417902E0C00564428 /* FlickrPhoto.m */,
-				7499C997179035B700564428 /* FlickrPhotoCell.h */,
-				7499C998179035B700564428 /* FlickrPhotoCell.m */,
+				749FE1531794292600249764 /* App-Store.png */,
+				749FE1541794292600249764 /* App-Store@2x.png */,
+				749FE1551794292600249764 /* Calculator.png */,
+				749FE1561794292600249764 /* Calculator@2x.png */,
+				749FE1571794292600249764 /* Calendar.png */,
+				749FE1581794292600249764 /* Calendar@2x.png */,
+				749FE1591794292600249764 /* Camera.png */,
+				749FE15A1794292600249764 /* Camera@2x.png */,
+				749FE15B1794292600249764 /* Clock.png */,
+				749FE15C1794292600249764 /* Clock@2x.png */,
+				749FE15D1794292600249764 /* Contacts.png */,
+				749FE15E1794292600249764 /* Contacts@2x.png */,
+				749FE15F1794292600249764 /* iPod.png */,
+				749FE1601794292600249764 /* iPod@2x.png */,
+				749FE1611794292600249764 /* iTunes.png */,
+				749FE1621794292600249764 /* iTunes@2x.png */,
+				749FE1631794292600249764 /* Mail.png */,
+				749FE1641794292600249764 /* Mail@2x.png */,
+				749FE1651794292600249764 /* Maps.png */,
+				749FE1661794292600249764 /* Maps@2x.png */,
+				749FE1671794292600249764 /* Messages.png */,
+				749FE1681794292600249764 /* Messages@2x.png */,
+				749FE1691794292600249764 /* Notes.png */,
+				749FE16A1794292600249764 /* Notes@2x.png */,
+				749FE16B1794292600249764 /* Phone.png */,
+				749FE16C1794292600249764 /* Phone@2x.png */,
+				749FE16D1794292600249764 /* Photos.png */,
+				749FE16E1794292600249764 /* Photos@2x.png */,
+				749FE16F1794292600249764 /* Safari.png */,
+				749FE1701794292600249764 /* Safari@2x.png */,
+				749FE1711794292600249764 /* Settings.png */,
+				749FE1721794292600249764 /* Settings@2x.png */,
+				749FE1731794292600249764 /* Stocks.png */,
+				749FE1741794292600249764 /* Stocks@2x.png */,
+				749FE1751794292600249764 /* Voice-Memos.png */,
+				749FE1761794292600249764 /* Voice-Memos@2x.png */,
+				749FE1771794292600249764 /* Weather.png */,
+				749FE1781794292600249764 /* Weather@2x.png */,
+				749FE1791794292600249764 /* YouTube.png */,
+				749FE17A1794292600249764 /* YouTube@2x.png */,
 			);
 			path = Flickr;
 			sourceTree = SOURCE_ROOT;
+			name = "App icons";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -314,23 +423,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749FE19C1794292600249764 /* Stocks@2x.png in Resources */,
+				749FE18D1794292600249764 /* Maps.png in Resources */,
+				749FE18F1794292600249764 /* Messages.png in Resources */,
+				749FE1821794292600249764 /* Camera@2x.png in Resources */,
+				749FE19F1794292600249764 /* Weather.png in Resources */,
+				749FE18A1794292600249764 /* iTunes@2x.png in Resources */,
 				74EA607A178FFC67000EFD9B /* nebula.png in Resources */,
 				74EA607F178FFCBC000EFD9B /* galaxy@2x.png in Resources */,
+				749FE1931794292600249764 /* Phone.png in Resources */,
+				749FE1A7179429AE00249764 /* Default.png in Resources */,
+				749FE1971794292600249764 /* Safari.png in Resources */,
+				749FE17E1794292600249764 /* Calculator@2x.png in Resources */,
+				749FE1A8179429AE00249764 /* Default@2x.png in Resources */,
+				749FE1901794292600249764 /* Messages@2x.png in Resources */,
 				74EA6075178FFC67000EFD9B /* earth.png in Resources */,
+				749FE1981794292600249764 /* Safari@2x.png in Resources */,
+				749FE1951794292600249764 /* Photos.png in Resources */,
+				749FE17D1794292600249764 /* Calculator.png in Resources */,
 				74EA6079178FFC67000EFD9B /* moon@2x.png in Resources */,
+				749FE1861794292600249764 /* Contacts@2x.png in Resources */,
 				743AFC8B178E998700083E50 /* Main.storyboard in Resources */,
+				749FE19E1794292600249764 /* Voice-Memos@2x.png in Resources */,
+				749FE19A1794292600249764 /* Settings@2x.png in Resources */,
+				749FE1A01794292600249764 /* Weather@2x.png in Resources */,
+				749FE17B1794292600249764 /* App-Store.png in Resources */,
+				749FE1801794292600249764 /* Calendar@2x.png in Resources */,
+				749FE1871794292600249764 /* iPod.png in Resources */,
 				7454BDFC178E8CCC00233B14 /* InfoPlist.strings in Resources */,
+				749FE1841794292600249764 /* Clock@2x.png in Resources */,
+				749FE1941794292600249764 /* Phone@2x.png in Resources */,
 				74EA60831790106B000EFD9B /* galaxy2@2x.png in Resources */,
 				74EA60821790106B000EFD9B /* galaxy2.png in Resources */,
+				749FE17F1794292600249764 /* Calendar.png in Resources */,
+				749FE18C1794292600249764 /* Mail@2x.png in Resources */,
 				7454BE30178E962000233B14 /* ios7background@2x.png in Resources */,
 				7454BE2F178E962000233B14 /* ios7background.png in Resources */,
+				749FE1831794292600249764 /* Clock.png in Resources */,
+				749FE1A6179429AE00249764 /* Default-568h@2x.png in Resources */,
 				74EA607E178FFCBC000EFD9B /* galaxy.png in Resources */,
+				749FE19B1794292600249764 /* Stocks.png in Resources */,
+				749FE1891794292600249764 /* iTunes.png in Resources */,
+				749FE1991794292600249764 /* Settings.png in Resources */,
+				749FE1A21794292600249764 /* YouTube@2x.png in Resources */,
+				749FE1961794292600249764 /* Photos@2x.png in Resources */,
+				749FE1921794292600249764 /* Notes@2x.png in Resources */,
+				749FE19D1794292600249764 /* Voice-Memos.png in Resources */,
 				74EA6076178FFC67000EFD9B /* earth@2x.png in Resources */,
+				749FE17C1794292600249764 /* App-Store@2x.png in Resources */,
 				74EA6078178FFC67000EFD9B /* moon.png in Resources */,
-				744841B9178E989B0073F2C3 /* Default.png in Resources */,
+				749FE1881794292600249764 /* iPod@2x.png in Resources */,
+				749FE1851794292600249764 /* Contacts.png in Resources */,
+				749FE18B1794292600249764 /* Mail.png in Resources */,
+				749FE18E1794292600249764 /* Maps@2x.png in Resources */,
 				74EA607B178FFC67000EFD9B /* nebula@2x.png in Resources */,
-				744841BA178E989B0073F2C3 /* Default-568h@2x.png in Resources */,
-				744841BB178E989B0073F2C3 /* Default@2x.png in Resources */,
+				749FE1A11794292600249764 /* YouTube.png in Resources */,
+				749FE1911794292600249764 /* Notes.png in Resources */,
+				749FE1811794292600249764 /* Camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
