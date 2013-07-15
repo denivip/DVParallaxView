@@ -30,7 +30,7 @@
         self.parallaxFrontFactor = 20.f;
         self.backgroundColor = [UIColor clearColor];
         [self addSubview:self.backgroundImageView];
-        [self addSubview:self.contentOffsetLabel];
+//        [self addSubview:self.contentOffsetLabel];
         
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandler:)];
         [self addGestureRecognizer:panRecognizer];
