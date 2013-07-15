@@ -11,6 +11,7 @@
 
 @interface DVViewController ()
 @property (nonatomic, strong) DVParallaxView *parallaxView;
+@property (weak, nonatomic) IBOutlet UIView *frontView;
 @end
 
 @implementation DVViewController
@@ -43,6 +44,7 @@
             [button setTitle:[NSString stringWithFormat:@"%d", i+1] forState:UIControlStateNormal];
             [view addSubview:button];
         }
+        [_parallaxView setFrontView:self.frontView];
     }
     
     return _parallaxView;
