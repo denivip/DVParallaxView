@@ -228,7 +228,6 @@
 		7454BDF7178E8CCC00233B14 /* ParallaxViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				7499C99017902E0C00564428 /* Flickr */,
 				743AFC8A178E997F00083E50 /* Main.storyboard */,
 				7454BE00178E8CCC00233B14 /* DVAppDelegate.h */,
 				7454BE01178E8CCC00233B14 /* DVAppDelegate.m */,
@@ -293,7 +292,6 @@
 			name = images;
 			sourceTree = "<group>";
 		};
-		7499C99017902E0C00564428 /* Flickr */ = {
 		749FE1521794291700249764 /* App icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,8 +336,6 @@
 				749FE1791794292600249764 /* YouTube.png */,
 				749FE17A1794292600249764 /* YouTube@2x.png */,
 			);
-			path = Flickr;
-			sourceTree = SOURCE_ROOT;
 			name = "App icons";
 			sourceTree = "<group>";
 		};
@@ -498,11 +494,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7499C999179035B700564428 /* FlickrPhotoCell.m in Sources */,
-				7499C99517902E0C00564428 /* Flickr.m in Sources */,
 				7454BE02178E8CCC00233B14 /* DVAppDelegate.m in Sources */,
 				7454BE28178E8D0C00233B14 /* DVParallaxView.m in Sources */,
-				7499C99617902E0C00564428 /* FlickrPhoto.m in Sources */,
 				7454BE08178E8CCC00233B14 /* DVViewController.m in Sources */,
 				7454BDFE178E8CCC00233B14 /* main.m in Sources */,
 			);
