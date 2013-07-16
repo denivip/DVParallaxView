@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 @property (nonatomic, strong) UILabel *contentOffsetLabel;
 @property (nonatomic, strong) CMMotionManager *motionManager;
+@property (nonatomic, strong) CADisplayLink *displayLink;
 @end
 
 @implementation DVParallaxView
@@ -40,10 +41,19 @@
 
 #pragma mark - Getters
 
+-(CADisplayLink *)displayLink {
+    if (!_displayLink) {
+        _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkHandler)];
+//        [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:nil];
+    }
+    
+    return _displayLink;
+}
+
 -(CMMotionManager *)motionManager {
     if (!_motionManager) {
         _motionManager = [[CMMotionManager alloc] init];
-        _motionManager.gyroUpdateInterval = 0.03f;
+        _motionManager.deviceMotionUpdateInterval = 0.005f;
     }
     
     return _motionManager;
@@ -141,10 +151,13 @@
     _gyroscopeControl = gyroscopeControl;
     
     if (gyroscopeControl) {
-        [self.motionManager startGyroUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMGyroData *gyroData, NSError *error) {
-            [self setContentOffset:[self contentOffsetFromGyro:gyroData]];
-        }];
+//        [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMDeviceMotion *motion, NSError *error) {
+//            [self setContentOffset:[self contentOffsetWithRotationRate:motion.rotationRate]];
+//        }];
+        [self.motionManager startDeviceMotionUpdates];
+        [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     } else {
+        [self.displayLink invalidate];
         [self.motionManager stopGyroUpdates];
         self.motionManager = nil;
     }
@@ -161,13 +174,16 @@
 
 #pragma mark - Gyroscope to offset
          
-- (CGPoint)contentOffsetFromGyro:(CMGyroData *)gyroData {
-    double xOffset = (fabs(gyroData.rotationRate.y) > DV_ROTATION_THRESHOLD)?gyroData.rotationRate.y*DV_ROTATION_MULTIPLIER:0.f;
-    double yOffset = (fabs(gyroData.rotationRate.x) > DV_ROTATION_THRESHOLD)?gyroData.rotationRate.x*DV_ROTATION_MULTIPLIER:0.f;
+- (CGPoint)contentOffsetWithRotationRate:(CMRotationRate)rotationRate {
+    double xOffset = (fabs(rotationRate.y) > DV_ROTATION_THRESHOLD)?rotationRate.y*DV_ROTATION_MULTIPLIER:0.f;
+    double yOffset = (fabs(rotationRate.x) > DV_ROTATION_THRESHOLD)?rotationRate.x*DV_ROTATION_MULTIPLIER:0.f;
     CGPoint newOffset = CGPointMake(self.contentOffset.x + xOffset,
                                     self.contentOffset.y + yOffset);
-    [self updateInfoLabelWithRotationRate:gyroData.rotationRate];
     return newOffset;
+}
+                        
+- (void)displayLinkHandler {
+    [self setContentOffset:[self contentOffsetWithRotationRate:self.motionManager.deviceMotion.rotationRate]];
 }
 
 #pragma mark - Gesture handler
