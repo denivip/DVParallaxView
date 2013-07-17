@@ -27,11 +27,10 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.parallaxDistanceFactor = 1.1f;
+        self.parallaxDistanceFactor = 2.f;
         self.parallaxFrontFactor = 20.f;
         self.backgroundColor = [UIColor clearColor];
         [self addSubview:self.backgroundImageView];
-//        [self addSubview:self.contentOffsetLabel];
         
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panHandler:)];
         [self addGestureRecognizer:panRecognizer];
@@ -44,7 +43,6 @@
 -(CADisplayLink *)displayLink {
     if (!_displayLink) {
         _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkHandler)];
-//        [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:nil];
     }
     
     return _displayLink;
@@ -53,7 +51,7 @@
 -(CMMotionManager *)motionManager {
     if (!_motionManager) {
         _motionManager = [[CMMotionManager alloc] init];
-        _motionManager.deviceMotionUpdateInterval = 0.005f;
+        _motionManager.deviceMotionUpdateInterval = 0.03f;
     }
     
     return _motionManager;
@@ -151,14 +149,11 @@
     _gyroscopeControl = gyroscopeControl;
     
     if (gyroscopeControl) {
-//        [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMDeviceMotion *motion, NSError *error) {
-//            [self setContentOffset:[self contentOffsetWithRotationRate:motion.rotationRate]];
-//        }];
         [self.motionManager startDeviceMotionUpdates];
         [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     } else {
         [self.displayLink invalidate];
-        [self.motionManager stopGyroUpdates];
+        [self.motionManager stopDeviceMotionUpdates];
         self.motionManager = nil;
     }
 }
@@ -194,13 +189,6 @@
                                        self.contentOffset.y - translation.y)];
     
     [pan setTranslation:CGPointZero inView:self];
-}
-
-#pragma mark - Updating content offset info
-
-- (void)updateInfoLabelWithRotationRate:(CMRotationRate)rotationRate {
-    self.contentOffsetLabel.text = [NSString stringWithFormat:@"%.3f    %.3f    %.3f", rotationRate.x, rotationRate.y, rotationRate.z];
-    [self.contentOffsetLabel sizeToFit];
 }
 
 @end
