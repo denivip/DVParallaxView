@@ -14,7 +14,6 @@
 
 @interface DVParallaxView()
 @property (nonatomic, strong) UIImageView *backgroundImageView;
-@property (nonatomic, strong) UILabel *contentOffsetLabel;
 @property (nonatomic, strong) CMMotionManager *motionManager;
 @property (nonatomic, strong) CADisplayLink *displayLink;
 @end
@@ -66,18 +65,6 @@
     }
     
     return _backgroundImageView;
-}
-
--(UILabel *)contentOffsetLabel {
-    if (!_contentOffsetLabel) {
-        _contentOffsetLabel = [[UILabel alloc] init];
-        _contentOffsetLabel.backgroundColor = [UIColor clearColor];
-        _contentOffsetLabel.textColor = [UIColor whiteColor];
-        _contentOffsetLabel.center = CGPointMake(0.f,
-                                                 2*_contentOffsetLabel.bounds.size.height);
-    }
-    
-    return _contentOffsetLabel;
 }
 
 #pragma mark - Setters

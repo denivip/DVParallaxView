@@ -15,6 +15,7 @@
 @property (nonatomic) float parallaxDistanceFactor;
 @property (nonatomic) float parallaxFrontFactor;
 @property (nonatomic) CGPoint contentOffset;
+
 @property (nonatomic) BOOL gyroscopeControl;
 @property (nonatomic) BOOL boundContentsToScreen;
 
