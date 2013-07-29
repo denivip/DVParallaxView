@@ -71,8 +71,6 @@
 		74EA6076178FFC67000EFD9B /* earth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA606F178FFC67000EFD9B /* earth@2x.png */; };
 		74EA6078178FFC67000EFD9B /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6071178FFC67000EFD9B /* moon.png */; };
 		74EA6079178FFC67000EFD9B /* moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6072178FFC67000EFD9B /* moon@2x.png */; };
-		74EA607A178FFC67000EFD9B /* nebula.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6073178FFC67000EFD9B /* nebula.png */; };
-		74EA607B178FFC67000EFD9B /* nebula@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA6074178FFC67000EFD9B /* nebula@2x.png */; };
 		74EA607E178FFCBC000EFD9B /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA607C178FFCBC000EFD9B /* galaxy.png */; };
 		74EA607F178FFCBC000EFD9B /* galaxy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA607D178FFCBC000EFD9B /* galaxy@2x.png */; };
 		74EA60821790106B000EFD9B /* galaxy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 74EA60801790106B000EFD9B /* galaxy2.png */; };
@@ -160,8 +158,6 @@
 		74EA606F178FFC67000EFD9B /* earth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "earth@2x.png"; path = "ParallaxViewTest/earth@2x.png"; sourceTree = "<group>"; };
 		74EA6071178FFC67000EFD9B /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moon.png; path = ParallaxViewTest/moon.png; sourceTree = "<group>"; };
 		74EA6072178FFC67000EFD9B /* moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "moon@2x.png"; path = "ParallaxViewTest/moon@2x.png"; sourceTree = "<group>"; };
-		74EA6073178FFC67000EFD9B /* nebula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nebula.png; path = ParallaxViewTest/nebula.png; sourceTree = "<group>"; };
-		74EA6074178FFC67000EFD9B /* nebula@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nebula@2x.png"; path = "ParallaxViewTest/nebula@2x.png"; sourceTree = "<group>"; };
 		74EA607C178FFCBC000EFD9B /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = galaxy.png; path = ParallaxViewTest/galaxy.png; sourceTree = "<group>"; };
 		74EA607D178FFCBC000EFD9B /* galaxy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "galaxy@2x.png"; path = "ParallaxViewTest/galaxy@2x.png"; sourceTree = "<group>"; };
 		74EA60801790106B000EFD9B /* galaxy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = galaxy2.png; path = ParallaxViewTest/galaxy2.png; sourceTree = "<group>"; };
@@ -284,8 +280,6 @@
 				74EA606F178FFC67000EFD9B /* earth@2x.png */,
 				74EA6071178FFC67000EFD9B /* moon.png */,
 				74EA6072178FFC67000EFD9B /* moon@2x.png */,
-				74EA6073178FFC67000EFD9B /* nebula.png */,
-				74EA6074178FFC67000EFD9B /* nebula@2x.png */,
 				7454BE2D178E962000233B14 /* ios7background.png */,
 				7454BE2E178E962000233B14 /* ios7background@2x.png */,
 			);
@@ -425,7 +419,6 @@
 				749FE1821794292600249764 /* Camera@2x.png in Resources */,
 				749FE19F1794292600249764 /* Weather.png in Resources */,
 				749FE18A1794292600249764 /* iTunes@2x.png in Resources */,
-				74EA607A178FFC67000EFD9B /* nebula.png in Resources */,
 				74EA607F178FFCBC000EFD9B /* galaxy@2x.png in Resources */,
 				749FE1931794292600249764 /* Phone.png in Resources */,
 				749FE1A7179429AE00249764 /* Default.png in Resources */,
@@ -472,7 +465,6 @@
 				749FE1851794292600249764 /* Contacts.png in Resources */,
 				749FE18B1794292600249764 /* Mail.png in Resources */,
 				749FE18E1794292600249764 /* Maps@2x.png in Resources */,
-				74EA607B178FFC67000EFD9B /* nebula@2x.png in Resources */,
 				749FE1A11794292600249764 /* YouTube.png in Resources */,
 				749FE1911794292600249764 /* Notes.png in Resources */,
 				749FE1811794292600249764 /* Camera.png in Resources */,
