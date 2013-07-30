@@ -1,711 +1,1998 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		743AFC8B178E998700083E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743AFC8A178E997F00083E50 /* Main.storyboard */; };
-		743AFC8D178EBEEB00083E50 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743AFC8C178EBEEB00083E50 /* CoreMotion.framework */; };
-		7454BDF2178E8CCC00233B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF1178E8CCC00233B14 /* Foundation.framework */; };
-		7454BDF4178E8CCC00233B14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */; };
-		7454BDF6178E8CCC00233B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF5178E8CCC00233B14 /* UIKit.framework */; };
-		7454BDFC178E8CCC00233B14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7454BDFA178E8CCC00233B14 /* InfoPlist.strings */; };
-		7454BDFE178E8CCC00233B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BDFD178E8CCC00233B14 /* main.m */; };
-		7454BE02178E8CCC00233B14 /* DVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE01178E8CCC00233B14 /* DVAppDelegate.m */; };
-		7454BE08178E8CCC00233B14 /* DVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE07178E8CCC00233B14 /* DVViewController.m */; };
-		7454BE11178E8CCC00233B14 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BE10178E8CCC00233B14 /* XCTest.framework */; };
-		7454BE12178E8CCC00233B14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF1178E8CCC00233B14 /* Foundation.framework */; };
-		7454BE13178E8CCC00233B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7454BDF5178E8CCC00233B14 /* UIKit.framework */; };
-		7454BE1B178E8CCC00233B14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7454BE19178E8CCC00233B14 /* InfoPlist.strings */; };
-		7454BE1D178E8CCC00233B14 /* ParallaxViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE1C178E8CCC00233B14 /* ParallaxViewTestTests.m */; };
-		7454BE28178E8D0C00233B14 /* DVParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7454BE27178E8D0C00233B14 /* DVParallaxView.m */; };
-		749FE17B1794292600249764 /* App-Store.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1531794292600249764 /* App-Store.png */; };
-		749FE17C1794292600249764 /* App-Store@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1541794292600249764 /* App-Store@2x.png */; };
-		749FE17D1794292600249764 /* Calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1551794292600249764 /* Calculator.png */; };
-		749FE17E1794292600249764 /* Calculator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1561794292600249764 /* Calculator@2x.png */; };
-		749FE17F1794292600249764 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1571794292600249764 /* Calendar.png */; };
-		749FE1801794292600249764 /* Calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1581794292600249764 /* Calendar@2x.png */; };
-		749FE1811794292600249764 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1591794292600249764 /* Camera.png */; };
-		749FE1821794292600249764 /* Camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15A1794292600249764 /* Camera@2x.png */; };
-		749FE1831794292600249764 /* Clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15B1794292600249764 /* Clock.png */; };
-		749FE1841794292600249764 /* Clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15C1794292600249764 /* Clock@2x.png */; };
-		749FE1851794292600249764 /* Contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15D1794292600249764 /* Contacts.png */; };
-		749FE1861794292600249764 /* Contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15E1794292600249764 /* Contacts@2x.png */; };
-		749FE1871794292600249764 /* iPod.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE15F1794292600249764 /* iPod.png */; };
-		749FE1881794292600249764 /* iPod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1601794292600249764 /* iPod@2x.png */; };
-		749FE1891794292600249764 /* iTunes.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1611794292600249764 /* iTunes.png */; };
-		749FE18A1794292600249764 /* iTunes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1621794292600249764 /* iTunes@2x.png */; };
-		749FE18B1794292600249764 /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1631794292600249764 /* Mail.png */; };
-		749FE18C1794292600249764 /* Mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1641794292600249764 /* Mail@2x.png */; };
-		749FE18D1794292600249764 /* Maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1651794292600249764 /* Maps.png */; };
-		749FE18E1794292600249764 /* Maps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1661794292600249764 /* Maps@2x.png */; };
-		749FE18F1794292600249764 /* Messages.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1671794292600249764 /* Messages.png */; };
-		749FE1901794292600249764 /* Messages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1681794292600249764 /* Messages@2x.png */; };
-		749FE1911794292600249764 /* Notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1691794292600249764 /* Notes.png */; };
-		749FE1921794292600249764 /* Notes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16A1794292600249764 /* Notes@2x.png */; };
-		749FE1931794292600249764 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16B1794292600249764 /* Phone.png */; };
-		749FE1941794292600249764 /* Phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16C1794292600249764 /* Phone@2x.png */; };
-		749FE1951794292600249764 /* Photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16D1794292600249764 /* Photos.png */; };
-		749FE1961794292600249764 /* Photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16E1794292600249764 /* Photos@2x.png */; };
-		749FE1971794292600249764 /* Safari.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE16F1794292600249764 /* Safari.png */; };
-		749FE1981794292600249764 /* Safari@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1701794292600249764 /* Safari@2x.png */; };
-		749FE1991794292600249764 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1711794292600249764 /* Settings.png */; };
-		749FE19A1794292600249764 /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1721794292600249764 /* Settings@2x.png */; };
-		749FE19B1794292600249764 /* Stocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1731794292600249764 /* Stocks.png */; };
-		749FE19C1794292600249764 /* Stocks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1741794292600249764 /* Stocks@2x.png */; };
-		749FE19D1794292600249764 /* Voice-Memos.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1751794292600249764 /* Voice-Memos.png */; };
-		749FE19E1794292600249764 /* Voice-Memos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1761794292600249764 /* Voice-Memos@2x.png */; };
-		749FE19F1794292600249764 /* Weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1771794292600249764 /* Weather.png */; };
-		749FE1A01794292600249764 /* Weather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1781794292600249764 /* Weather@2x.png */; };
-		749FE1A11794292600249764 /* YouTube.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1791794292600249764 /* YouTube.png */; };
-		749FE1A21794292600249764 /* YouTube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE17A1794292600249764 /* YouTube@2x.png */; };
-		749FE1A6179429AE00249764 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1A3179429AE00249764 /* Default-568h@2x.png */; };
-		749FE1A7179429AE00249764 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1A4179429AE00249764 /* Default.png */; };
-		749FE1A8179429AE00249764 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 749FE1A5179429AE00249764 /* Default@2x.png */; };
-		74B5B88317A7EBAE00266FD1 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B87917A7EBAE00266FD1 /* earth.png */; };
-		74B5B88417A7EBAE00266FD1 /* earth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B87A17A7EBAE00266FD1 /* earth@2x.png */; };
-		74B5B88517A7EBAE00266FD1 /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B87B17A7EBAE00266FD1 /* galaxy.png */; };
-		74B5B88617A7EBAE00266FD1 /* galaxy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B87C17A7EBAE00266FD1 /* galaxy@2x.png */; };
-		74B5B88717A7EBAE00266FD1 /* galaxy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B87D17A7EBAE00266FD1 /* galaxy2.png */; };
-		74B5B88817A7EBAE00266FD1 /* galaxy2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B87E17A7EBAE00266FD1 /* galaxy2@2x.png */; };
-		74B5B88917A7EBAE00266FD1 /* ios7background.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B87F17A7EBAE00266FD1 /* ios7background.png */; };
-		74B5B88A17A7EBAE00266FD1 /* ios7background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B88017A7EBAE00266FD1 /* ios7background@2x.png */; };
-		74B5B88B17A7EBAE00266FD1 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B88117A7EBAE00266FD1 /* moon.png */; };
-		74B5B88C17A7EBAE00266FD1 /* moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B5B88217A7EBAE00266FD1 /* moon@2x.png */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7454BE14178E8CCC00233B14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7454BDE6178E8CCB00233B14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7454BDED178E8CCC00233B14;
-			remoteInfo = ParallaxViewTest;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		743AFC8A178E997F00083E50 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		743AFC8C178EBEEB00083E50 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		7454BDEE178E8CCC00233B14 /* ParallaxViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7454BDF1178E8CCC00233B14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7454BDF5178E8CCC00233B14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7454BDF9178E8CCC00233B14 /* ParallaxViewTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParallaxViewTest-Info.plist"; sourceTree = "<group>"; };
-		7454BDFB178E8CCC00233B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7454BDFD178E8CCC00233B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7454BDFF178E8CCC00233B14 /* ParallaxViewTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParallaxViewTest-Prefix.pch"; sourceTree = "<group>"; };
-		7454BE00178E8CCC00233B14 /* DVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVAppDelegate.h; sourceTree = "<group>"; };
-		7454BE01178E8CCC00233B14 /* DVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVAppDelegate.m; sourceTree = "<group>"; };
-		7454BE06178E8CCC00233B14 /* DVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVViewController.h; sourceTree = "<group>"; };
-		7454BE07178E8CCC00233B14 /* DVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVViewController.m; sourceTree = "<group>"; };
-		7454BE0F178E8CCC00233B14 /* ParallaxViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7454BE10178E8CCC00233B14 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7454BE18178E8CCC00233B14 /* ParallaxViewTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParallaxViewTestTests-Info.plist"; sourceTree = "<group>"; };
-		7454BE1A178E8CCC00233B14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7454BE1C178E8CCC00233B14 /* ParallaxViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallaxViewTestTests.m; sourceTree = "<group>"; };
-		7454BE26178E8D0C00233B14 /* DVParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVParallaxView.h; sourceTree = "<group>"; };
-		7454BE27178E8D0C00233B14 /* DVParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVParallaxView.m; sourceTree = "<group>"; };
-		749FE1531794292600249764 /* App-Store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App-Store.png"; path = "ParallaxViewTest/images/App-Store.png"; sourceTree = "<group>"; };
-		749FE1541794292600249764 /* App-Store@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App-Store@2x.png"; path = "ParallaxViewTest/images/App-Store@2x.png"; sourceTree = "<group>"; };
-		749FE1551794292600249764 /* Calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calculator.png; path = ParallaxViewTest/images/Calculator.png; sourceTree = "<group>"; };
-		749FE1561794292600249764 /* Calculator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Calculator@2x.png"; path = "ParallaxViewTest/images/Calculator@2x.png"; sourceTree = "<group>"; };
-		749FE1571794292600249764 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calendar.png; path = ParallaxViewTest/images/Calendar.png; sourceTree = "<group>"; };
-		749FE1581794292600249764 /* Calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Calendar@2x.png"; path = "ParallaxViewTest/images/Calendar@2x.png"; sourceTree = "<group>"; };
-		749FE1591794292600249764 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Camera.png; path = ParallaxViewTest/images/Camera.png; sourceTree = "<group>"; };
-		749FE15A1794292600249764 /* Camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Camera@2x.png"; path = "ParallaxViewTest/images/Camera@2x.png"; sourceTree = "<group>"; };
-		749FE15B1794292600249764 /* Clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Clock.png; path = ParallaxViewTest/images/Clock.png; sourceTree = "<group>"; };
-		749FE15C1794292600249764 /* Clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Clock@2x.png"; path = "ParallaxViewTest/images/Clock@2x.png"; sourceTree = "<group>"; };
-		749FE15D1794292600249764 /* Contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Contacts.png; path = ParallaxViewTest/images/Contacts.png; sourceTree = "<group>"; };
-		749FE15E1794292600249764 /* Contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contacts@2x.png"; path = "ParallaxViewTest/images/Contacts@2x.png"; sourceTree = "<group>"; };
-		749FE15F1794292600249764 /* iPod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPod.png; path = ParallaxViewTest/images/iPod.png; sourceTree = "<group>"; };
-		749FE1601794292600249764 /* iPod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPod@2x.png"; path = "ParallaxViewTest/images/iPod@2x.png"; sourceTree = "<group>"; };
-		749FE1611794292600249764 /* iTunes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunes.png; path = ParallaxViewTest/images/iTunes.png; sourceTree = "<group>"; };
-		749FE1621794292600249764 /* iTunes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunes@2x.png"; path = "ParallaxViewTest/images/iTunes@2x.png"; sourceTree = "<group>"; };
-		749FE1631794292600249764 /* Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mail.png; path = ParallaxViewTest/images/Mail.png; sourceTree = "<group>"; };
-		749FE1641794292600249764 /* Mail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mail@2x.png"; path = "ParallaxViewTest/images/Mail@2x.png"; sourceTree = "<group>"; };
-		749FE1651794292600249764 /* Maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Maps.png; path = ParallaxViewTest/images/Maps.png; sourceTree = "<group>"; };
-		749FE1661794292600249764 /* Maps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Maps@2x.png"; path = "ParallaxViewTest/images/Maps@2x.png"; sourceTree = "<group>"; };
-		749FE1671794292600249764 /* Messages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Messages.png; path = ParallaxViewTest/images/Messages.png; sourceTree = "<group>"; };
-		749FE1681794292600249764 /* Messages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Messages@2x.png"; path = "ParallaxViewTest/images/Messages@2x.png"; sourceTree = "<group>"; };
-		749FE1691794292600249764 /* Notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Notes.png; path = ParallaxViewTest/images/Notes.png; sourceTree = "<group>"; };
-		749FE16A1794292600249764 /* Notes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Notes@2x.png"; path = "ParallaxViewTest/images/Notes@2x.png"; sourceTree = "<group>"; };
-		749FE16B1794292600249764 /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Phone.png; path = ParallaxViewTest/images/Phone.png; sourceTree = "<group>"; };
-		749FE16C1794292600249764 /* Phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Phone@2x.png"; path = "ParallaxViewTest/images/Phone@2x.png"; sourceTree = "<group>"; };
-		749FE16D1794292600249764 /* Photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Photos.png; path = ParallaxViewTest/images/Photos.png; sourceTree = "<group>"; };
-		749FE16E1794292600249764 /* Photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Photos@2x.png"; path = "ParallaxViewTest/images/Photos@2x.png"; sourceTree = "<group>"; };
-		749FE16F1794292600249764 /* Safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Safari.png; path = ParallaxViewTest/images/Safari.png; sourceTree = "<group>"; };
-		749FE1701794292600249764 /* Safari@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Safari@2x.png"; path = "ParallaxViewTest/images/Safari@2x.png"; sourceTree = "<group>"; };
-		749FE1711794292600249764 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Settings.png; path = ParallaxViewTest/images/Settings.png; sourceTree = "<group>"; };
-		749FE1721794292600249764 /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Settings@2x.png"; path = "ParallaxViewTest/images/Settings@2x.png"; sourceTree = "<group>"; };
-		749FE1731794292600249764 /* Stocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stocks.png; path = ParallaxViewTest/images/Stocks.png; sourceTree = "<group>"; };
-		749FE1741794292600249764 /* Stocks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Stocks@2x.png"; path = "ParallaxViewTest/images/Stocks@2x.png"; sourceTree = "<group>"; };
-		749FE1751794292600249764 /* Voice-Memos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Voice-Memos.png"; path = "ParallaxViewTest/images/Voice-Memos.png"; sourceTree = "<group>"; };
-		749FE1761794292600249764 /* Voice-Memos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Voice-Memos@2x.png"; path = "ParallaxViewTest/images/Voice-Memos@2x.png"; sourceTree = "<group>"; };
-		749FE1771794292600249764 /* Weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Weather.png; path = ParallaxViewTest/images/Weather.png; sourceTree = "<group>"; };
-		749FE1781794292600249764 /* Weather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Weather@2x.png"; path = "ParallaxViewTest/images/Weather@2x.png"; sourceTree = "<group>"; };
-		749FE1791794292600249764 /* YouTube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YouTube.png; path = ParallaxViewTest/images/YouTube.png; sourceTree = "<group>"; };
-		749FE17A1794292600249764 /* YouTube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "YouTube@2x.png"; path = "ParallaxViewTest/images/YouTube@2x.png"; sourceTree = "<group>"; };
-		749FE1A3179429AE00249764 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		749FE1A4179429AE00249764 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		749FE1A5179429AE00249764 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		74B5B87917A7EBAE00266FD1 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earth.png; path = ParallaxViewTest/images/earth.png; sourceTree = "<group>"; };
-		74B5B87A17A7EBAE00266FD1 /* earth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "earth@2x.png"; path = "ParallaxViewTest/images/earth@2x.png"; sourceTree = "<group>"; };
-		74B5B87B17A7EBAE00266FD1 /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = galaxy.png; path = ParallaxViewTest/images/galaxy.png; sourceTree = "<group>"; };
-		74B5B87C17A7EBAE00266FD1 /* galaxy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "galaxy@2x.png"; path = "ParallaxViewTest/images/galaxy@2x.png"; sourceTree = "<group>"; };
-		74B5B87D17A7EBAE00266FD1 /* galaxy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = galaxy2.png; path = ParallaxViewTest/images/galaxy2.png; sourceTree = "<group>"; };
-		74B5B87E17A7EBAE00266FD1 /* galaxy2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "galaxy2@2x.png"; path = "ParallaxViewTest/images/galaxy2@2x.png"; sourceTree = "<group>"; };
-		74B5B87F17A7EBAE00266FD1 /* ios7background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios7background.png; path = ParallaxViewTest/images/ios7background.png; sourceTree = "<group>"; };
-		74B5B88017A7EBAE00266FD1 /* ios7background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7background@2x.png"; path = "ParallaxViewTest/images/ios7background@2x.png"; sourceTree = "<group>"; };
-		74B5B88117A7EBAE00266FD1 /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moon.png; path = ParallaxViewTest/images/moon.png; sourceTree = "<group>"; };
-		74B5B88217A7EBAE00266FD1 /* moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "moon@2x.png"; path = "ParallaxViewTest/images/moon@2x.png"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		7454BDEB178E8CCC00233B14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				743AFC8D178EBEEB00083E50 /* CoreMotion.framework in Frameworks */,
-				7454BDF4178E8CCC00233B14 /* CoreGraphics.framework in Frameworks */,
-				7454BDF6178E8CCC00233B14 /* UIKit.framework in Frameworks */,
-				7454BDF2178E8CCC00233B14 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7454BE0C178E8CCC00233B14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7454BE11178E8CCC00233B14 /* XCTest.framework in Frameworks */,
-				7454BE13178E8CCC00233B14 /* UIKit.framework in Frameworks */,
-				7454BE12178E8CCC00233B14 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		7454BDE5178E8CCB00233B14 = {
-			isa = PBXGroup;
-			children = (
-				7454BE29178E92A300233B14 /* images */,
-				7454BDF7178E8CCC00233B14 /* ParallaxViewTest */,
-				7454BE16178E8CCC00233B14 /* ParallaxViewTestTests */,
-				7454BDF0178E8CCC00233B14 /* Frameworks */,
-				7454BDEF178E8CCC00233B14 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7454BDEF178E8CCC00233B14 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7454BDEE178E8CCC00233B14 /* ParallaxViewTest.app */,
-				7454BE0F178E8CCC00233B14 /* ParallaxViewTestTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7454BDF0178E8CCC00233B14 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				743AFC8C178EBEEB00083E50 /* CoreMotion.framework */,
-				7454BDF1178E8CCC00233B14 /* Foundation.framework */,
-				7454BDF3178E8CCC00233B14 /* CoreGraphics.framework */,
-				7454BDF5178E8CCC00233B14 /* UIKit.framework */,
-				7454BE10178E8CCC00233B14 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7454BDF7178E8CCC00233B14 /* ParallaxViewTest */ = {
-			isa = PBXGroup;
-			children = (
-				743AFC8A178E997F00083E50 /* Main.storyboard */,
-				7454BE00178E8CCC00233B14 /* DVAppDelegate.h */,
-				7454BE01178E8CCC00233B14 /* DVAppDelegate.m */,
-				7454BE06178E8CCC00233B14 /* DVViewController.h */,
-				7454BE07178E8CCC00233B14 /* DVViewController.m */,
-				7454BDF8178E8CCC00233B14 /* Supporting Files */,
-				7454BE26178E8D0C00233B14 /* DVParallaxView.h */,
-				7454BE27178E8D0C00233B14 /* DVParallaxView.m */,
-			);
-			path = ParallaxViewTest;
-			sourceTree = "<group>";
-		};
-		7454BDF8178E8CCC00233B14 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7454BDF9178E8CCC00233B14 /* ParallaxViewTest-Info.plist */,
-				7454BDFA178E8CCC00233B14 /* InfoPlist.strings */,
-				7454BDFD178E8CCC00233B14 /* main.m */,
-				7454BDFF178E8CCC00233B14 /* ParallaxViewTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7454BE16178E8CCC00233B14 /* ParallaxViewTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				7454BE1C178E8CCC00233B14 /* ParallaxViewTestTests.m */,
-				7454BE17178E8CCC00233B14 /* Supporting Files */,
-			);
-			path = ParallaxViewTestTests;
-			sourceTree = "<group>";
-		};
-		7454BE17178E8CCC00233B14 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7454BE18178E8CCC00233B14 /* ParallaxViewTestTests-Info.plist */,
-				7454BE19178E8CCC00233B14 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7454BE29178E92A300233B14 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				74B5B87817A7EB8E00266FD1 /* Space images */,
-				749FE1521794291700249764 /* App icons */,
-				749FE1A3179429AE00249764 /* Default-568h@2x.png */,
-				749FE1A4179429AE00249764 /* Default.png */,
-				749FE1A5179429AE00249764 /* Default@2x.png */,
-			);
-			name = images;
-			sourceTree = "<group>";
-		};
-		749FE1521794291700249764 /* App icons */ = {
-			isa = PBXGroup;
-			children = (
-				749FE1531794292600249764 /* App-Store.png */,
-				749FE1541794292600249764 /* App-Store@2x.png */,
-				749FE1551794292600249764 /* Calculator.png */,
-				749FE1561794292600249764 /* Calculator@2x.png */,
-				749FE1571794292600249764 /* Calendar.png */,
-				749FE1581794292600249764 /* Calendar@2x.png */,
-				749FE1591794292600249764 /* Camera.png */,
-				749FE15A1794292600249764 /* Camera@2x.png */,
-				749FE15B1794292600249764 /* Clock.png */,
-				749FE15C1794292600249764 /* Clock@2x.png */,
-				749FE15D1794292600249764 /* Contacts.png */,
-				749FE15E1794292600249764 /* Contacts@2x.png */,
-				749FE15F1794292600249764 /* iPod.png */,
-				749FE1601794292600249764 /* iPod@2x.png */,
-				749FE1611794292600249764 /* iTunes.png */,
-				749FE1621794292600249764 /* iTunes@2x.png */,
-				749FE1631794292600249764 /* Mail.png */,
-				749FE1641794292600249764 /* Mail@2x.png */,
-				749FE1651794292600249764 /* Maps.png */,
-				749FE1661794292600249764 /* Maps@2x.png */,
-				749FE1671794292600249764 /* Messages.png */,
-				749FE1681794292600249764 /* Messages@2x.png */,
-				749FE1691794292600249764 /* Notes.png */,
-				749FE16A1794292600249764 /* Notes@2x.png */,
-				749FE16B1794292600249764 /* Phone.png */,
-				749FE16C1794292600249764 /* Phone@2x.png */,
-				749FE16D1794292600249764 /* Photos.png */,
-				749FE16E1794292600249764 /* Photos@2x.png */,
-				749FE16F1794292600249764 /* Safari.png */,
-				749FE1701794292600249764 /* Safari@2x.png */,
-				749FE1711794292600249764 /* Settings.png */,
-				749FE1721794292600249764 /* Settings@2x.png */,
-				749FE1731794292600249764 /* Stocks.png */,
-				749FE1741794292600249764 /* Stocks@2x.png */,
-				749FE1751794292600249764 /* Voice-Memos.png */,
-				749FE1761794292600249764 /* Voice-Memos@2x.png */,
-				749FE1771794292600249764 /* Weather.png */,
-				749FE1781794292600249764 /* Weather@2x.png */,
-				749FE1791794292600249764 /* YouTube.png */,
-				749FE17A1794292600249764 /* YouTube@2x.png */,
-			);
-			name = "App icons";
-			sourceTree = "<group>";
-		};
-		74B5B87817A7EB8E00266FD1 /* Space images */ = {
-			isa = PBXGroup;
-			children = (
-				74B5B87917A7EBAE00266FD1 /* earth.png */,
-				74B5B87A17A7EBAE00266FD1 /* earth@2x.png */,
-				74B5B87B17A7EBAE00266FD1 /* galaxy.png */,
-				74B5B87C17A7EBAE00266FD1 /* galaxy@2x.png */,
-				74B5B87D17A7EBAE00266FD1 /* galaxy2.png */,
-				74B5B87E17A7EBAE00266FD1 /* galaxy2@2x.png */,
-				74B5B87F17A7EBAE00266FD1 /* ios7background.png */,
-				74B5B88017A7EBAE00266FD1 /* ios7background@2x.png */,
-				74B5B88117A7EBAE00266FD1 /* moon.png */,
-				74B5B88217A7EBAE00266FD1 /* moon@2x.png */,
-			);
-			name = "Space images";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		7454BDED178E8CCC00233B14 /* ParallaxViewTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7454BE20178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTest" */;
-			buildPhases = (
-				7454BDEA178E8CCC00233B14 /* Sources */,
-				7454BDEB178E8CCC00233B14 /* Frameworks */,
-				7454BDEC178E8CCC00233B14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ParallaxViewTest;
-			productName = ParallaxViewTest;
-			productReference = 7454BDEE178E8CCC00233B14 /* ParallaxViewTest.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7454BE0E178E8CCC00233B14 /* ParallaxViewTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7454BE23178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTestTests" */;
-			buildPhases = (
-				7454BE0B178E8CCC00233B14 /* Sources */,
-				7454BE0C178E8CCC00233B14 /* Frameworks */,
-				7454BE0D178E8CCC00233B14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7454BE15178E8CCC00233B14 /* PBXTargetDependency */,
-			);
-			name = ParallaxViewTestTests;
-			productName = ParallaxViewTestTests;
-			productReference = 7454BE0F178E8CCC00233B14 /* ParallaxViewTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		7454BDE6178E8CCB00233B14 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = DV;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "DENIVIP Group";
-				TargetAttributes = {
-					7454BDED178E8CCC00233B14 = {
-						DevelopmentTeam = SQ676DBDCT;
-					};
-					7454BE0E178E8CCC00233B14 = {
-						TestTargetID = 7454BDED178E8CCC00233B14;
-					};
-				};
-			};
-			buildConfigurationList = 7454BDE9178E8CCB00233B14 /* Build configuration list for PBXProject "ParallaxViewTest" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 7454BDE5178E8CCB00233B14;
-			productRefGroup = 7454BDEF178E8CCC00233B14 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				7454BDED178E8CCC00233B14 /* ParallaxViewTest */,
-				7454BE0E178E8CCC00233B14 /* ParallaxViewTestTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		7454BDEC178E8CCC00233B14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				749FE19C1794292600249764 /* Stocks@2x.png in Resources */,
-				749FE18D1794292600249764 /* Maps.png in Resources */,
-				74B5B88B17A7EBAE00266FD1 /* moon.png in Resources */,
-				749FE18F1794292600249764 /* Messages.png in Resources */,
-				749FE1821794292600249764 /* Camera@2x.png in Resources */,
-				749FE19F1794292600249764 /* Weather.png in Resources */,
-				749FE18A1794292600249764 /* iTunes@2x.png in Resources */,
-				749FE1931794292600249764 /* Phone.png in Resources */,
-				749FE1A7179429AE00249764 /* Default.png in Resources */,
-				749FE1971794292600249764 /* Safari.png in Resources */,
-				749FE17E1794292600249764 /* Calculator@2x.png in Resources */,
-				74B5B88617A7EBAE00266FD1 /* galaxy@2x.png in Resources */,
-				749FE1A8179429AE00249764 /* Default@2x.png in Resources */,
-				749FE1901794292600249764 /* Messages@2x.png in Resources */,
-				74B5B88317A7EBAE00266FD1 /* earth.png in Resources */,
-				749FE1981794292600249764 /* Safari@2x.png in Resources */,
-				74B5B88A17A7EBAE00266FD1 /* ios7background@2x.png in Resources */,
-				749FE1951794292600249764 /* Photos.png in Resources */,
-				749FE17D1794292600249764 /* Calculator.png in Resources */,
-				749FE1861794292600249764 /* Contacts@2x.png in Resources */,
-				743AFC8B178E998700083E50 /* Main.storyboard in Resources */,
-				749FE19E1794292600249764 /* Voice-Memos@2x.png in Resources */,
-				74B5B88517A7EBAE00266FD1 /* galaxy.png in Resources */,
-				749FE19A1794292600249764 /* Settings@2x.png in Resources */,
-				749FE1A01794292600249764 /* Weather@2x.png in Resources */,
-				74B5B88817A7EBAE00266FD1 /* galaxy2@2x.png in Resources */,
-				749FE17B1794292600249764 /* App-Store.png in Resources */,
-				749FE1801794292600249764 /* Calendar@2x.png in Resources */,
-				749FE1871794292600249764 /* iPod.png in Resources */,
-				7454BDFC178E8CCC00233B14 /* InfoPlist.strings in Resources */,
-				749FE1841794292600249764 /* Clock@2x.png in Resources */,
-				74B5B88417A7EBAE00266FD1 /* earth@2x.png in Resources */,
-				749FE1941794292600249764 /* Phone@2x.png in Resources */,
-				749FE17F1794292600249764 /* Calendar.png in Resources */,
-				749FE18C1794292600249764 /* Mail@2x.png in Resources */,
-				749FE1831794292600249764 /* Clock.png in Resources */,
-				749FE1A6179429AE00249764 /* Default-568h@2x.png in Resources */,
-				749FE19B1794292600249764 /* Stocks.png in Resources */,
-				749FE1891794292600249764 /* iTunes.png in Resources */,
-				749FE1991794292600249764 /* Settings.png in Resources */,
-				749FE1A21794292600249764 /* YouTube@2x.png in Resources */,
-				74B5B88717A7EBAE00266FD1 /* galaxy2.png in Resources */,
-				749FE1961794292600249764 /* Photos@2x.png in Resources */,
-				749FE1921794292600249764 /* Notes@2x.png in Resources */,
-				749FE19D1794292600249764 /* Voice-Memos.png in Resources */,
-				74B5B88917A7EBAE00266FD1 /* ios7background.png in Resources */,
-				74B5B88C17A7EBAE00266FD1 /* moon@2x.png in Resources */,
-				749FE17C1794292600249764 /* App-Store@2x.png in Resources */,
-				749FE1881794292600249764 /* iPod@2x.png in Resources */,
-				749FE1851794292600249764 /* Contacts.png in Resources */,
-				749FE18B1794292600249764 /* Mail.png in Resources */,
-				749FE18E1794292600249764 /* Maps@2x.png in Resources */,
-				749FE1A11794292600249764 /* YouTube.png in Resources */,
-				749FE1911794292600249764 /* Notes.png in Resources */,
-				749FE1811794292600249764 /* Camera.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7454BE0D178E8CCC00233B14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7454BE1B178E8CCC00233B14 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7454BDEA178E8CCC00233B14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7454BE02178E8CCC00233B14 /* DVAppDelegate.m in Sources */,
-				7454BE28178E8D0C00233B14 /* DVParallaxView.m in Sources */,
-				7454BE08178E8CCC00233B14 /* DVViewController.m in Sources */,
-				7454BDFE178E8CCC00233B14 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7454BE0B178E8CCC00233B14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7454BE1D178E8CCC00233B14 /* ParallaxViewTestTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7454BE15178E8CCC00233B14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7454BDED178E8CCC00233B14 /* ParallaxViewTest */;
-			targetProxy = 7454BE14178E8CCC00233B14 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7454BDFA178E8CCC00233B14 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7454BDFB178E8CCC00233B14 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7454BE19178E8CCC00233B14 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7454BE1A178E8CCC00233B14 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		7454BE1E178E8CCC00233B14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		7454BE1F178E8CCC00233B14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7454BE21178E8CCC00233B14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
-				INFOPLIST_FILE = "ParallaxViewTest/ParallaxViewTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		7454BE22178E8CCC00233B14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
-				INFOPLIST_FILE = "ParallaxViewTest/ParallaxViewTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		7454BE24178E8CCC00233B14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParallaxViewTest.app/ParallaxViewTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ParallaxViewTestTests/ParallaxViewTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		7454BE25178E8CCC00233B14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParallaxViewTest.app/ParallaxViewTest";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
-				INFOPLIST_FILE = "ParallaxViewTestTests/ParallaxViewTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		7454BDE9178E8CCB00233B14 /* Build configuration list for PBXProject "ParallaxViewTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7454BE1E178E8CCC00233B14 /* Debug */,
-				7454BE1F178E8CCC00233B14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7454BE20178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7454BE21178E8CCC00233B14 /* Debug */,
-				7454BE22178E8CCC00233B14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7454BE23178E8CCC00233B14 /* Build configuration list for PBXNativeTarget "ParallaxViewTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7454BE24178E8CCC00233B14 /* Debug */,
-				7454BE25178E8CCC00233B14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 7454BDE6178E8CCB00233B14 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1A240E75BF634443A0C6A471</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>4926F67545E34023B36074C0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>689CFEBB4F094A4AAAC30F56</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>743AFC8A178E997F00083E50</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>743AFC8B178E998700083E50</key>
+		<dict>
+			<key>fileRef</key>
+			<string>743AFC8A178E997F00083E50</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>743AFC8C178EBEEB00083E50</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreMotion.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreMotion.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>743AFC8D178EBEEB00083E50</key>
+		<dict>
+			<key>fileRef</key>
+			<string>743AFC8C178EBEEB00083E50</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BDE5178E8CCB00233B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7454BE29178E92A300233B14</string>
+				<string>7454BDF7178E8CCC00233B14</string>
+				<string>7454BDF0178E8CCC00233B14</string>
+				<string>7454BDEF178E8CCC00233B14</string>
+				<string>FBD1615DDE26483A9ACE4DBE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDE6178E8CCB00233B14</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>DV</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>DENIVIP Group</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>7454BDED178E8CCC00233B14</key>
+					<dict>
+						<key>DevelopmentTeam</key>
+						<string>SQ676DBDCT</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>7454BDE9178E8CCB00233B14</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7454BDE5178E8CCB00233B14</string>
+			<key>productRefGroup</key>
+			<string>7454BDEF178E8CCC00233B14</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>7454BDED178E8CCC00233B14</string>
+			</array>
+		</dict>
+		<key>7454BDE9178E8CCB00233B14</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7454BE1E178E8CCC00233B14</string>
+				<string>7454BE1F178E8CCC00233B14</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7454BDEA178E8CCC00233B14</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7454BE02178E8CCC00233B14</string>
+				<string>7454BE08178E8CCC00233B14</string>
+				<string>7454BDFE178E8CCC00233B14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7454BDEB178E8CCC00233B14</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>743AFC8D178EBEEB00083E50</string>
+				<string>7454BDF4178E8CCC00233B14</string>
+				<string>7454BDF6178E8CCC00233B14</string>
+				<string>7454BDF2178E8CCC00233B14</string>
+				<string>DE2B1EDB1BC042E79F653E12</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7454BDEC178E8CCC00233B14</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>749FE19C1794292600249764</string>
+				<string>749FE18D1794292600249764</string>
+				<string>74B5B88B17A7EBAE00266FD1</string>
+				<string>749FE18F1794292600249764</string>
+				<string>749FE1821794292600249764</string>
+				<string>749FE19F1794292600249764</string>
+				<string>749FE18A1794292600249764</string>
+				<string>749FE1931794292600249764</string>
+				<string>749FE1971794292600249764</string>
+				<string>749FE17E1794292600249764</string>
+				<string>74B5B88617A7EBAE00266FD1</string>
+				<string>749FE1901794292600249764</string>
+				<string>74B5B88317A7EBAE00266FD1</string>
+				<string>749FE1981794292600249764</string>
+				<string>74B5B88A17A7EBAE00266FD1</string>
+				<string>749FE1951794292600249764</string>
+				<string>749FE17D1794292600249764</string>
+				<string>749FE1861794292600249764</string>
+				<string>743AFC8B178E998700083E50</string>
+				<string>749FE19E1794292600249764</string>
+				<string>74B5B88517A7EBAE00266FD1</string>
+				<string>749FE19A1794292600249764</string>
+				<string>749FE1A01794292600249764</string>
+				<string>74B5B88817A7EBAE00266FD1</string>
+				<string>749FE17B1794292600249764</string>
+				<string>749FE1801794292600249764</string>
+				<string>749FE1871794292600249764</string>
+				<string>74B5B89217A7F15900266FD1</string>
+				<string>7454BDFC178E8CCC00233B14</string>
+				<string>749FE1841794292600249764</string>
+				<string>74B5B88417A7EBAE00266FD1</string>
+				<string>749FE1941794292600249764</string>
+				<string>749FE17F1794292600249764</string>
+				<string>749FE18C1794292600249764</string>
+				<string>749FE1831794292600249764</string>
+				<string>749FE19B1794292600249764</string>
+				<string>749FE1891794292600249764</string>
+				<string>749FE1991794292600249764</string>
+				<string>74B5B89117A7F15900266FD1</string>
+				<string>749FE1A21794292600249764</string>
+				<string>74B5B88717A7EBAE00266FD1</string>
+				<string>749FE1961794292600249764</string>
+				<string>749FE1921794292600249764</string>
+				<string>749FE19D1794292600249764</string>
+				<string>74B5B88917A7EBAE00266FD1</string>
+				<string>74B5B88C17A7EBAE00266FD1</string>
+				<string>749FE17C1794292600249764</string>
+				<string>749FE1881794292600249764</string>
+				<string>74B5B89017A7F15900266FD1</string>
+				<string>749FE1851794292600249764</string>
+				<string>749FE18B1794292600249764</string>
+				<string>749FE18E1794292600249764</string>
+				<string>749FE1A11794292600249764</string>
+				<string>749FE1911794292600249764</string>
+				<string>749FE1811794292600249764</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7454BDED178E8CCC00233B14</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7454BE20178E8CCC00233B14</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1A240E75BF634443A0C6A471</string>
+				<string>7454BDEA178E8CCC00233B14</string>
+				<string>7454BDEB178E8CCC00233B14</string>
+				<string>7454BDEC178E8CCC00233B14</string>
+				<string>7F37FE44DD6E45AC8457FB4E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ParallaxViewTest</string>
+			<key>productName</key>
+			<string>ParallaxViewTest</string>
+			<key>productReference</key>
+			<string>7454BDEE178E8CCC00233B14</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>7454BDEE178E8CCC00233B14</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ParallaxViewTest.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7454BDEF178E8CCC00233B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7454BDEE178E8CCC00233B14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDF0178E8CCC00233B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>743AFC8C178EBEEB00083E50</string>
+				<string>7454BDF1178E8CCC00233B14</string>
+				<string>7454BDF3178E8CCC00233B14</string>
+				<string>7454BDF5178E8CCC00233B14</string>
+				<string>7454BE10178E8CCC00233B14</string>
+				<string>4926F67545E34023B36074C0</string>
+				<string>689CFEBB4F094A4AAAC30F56</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDF1178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7454BDF2178E8CCC00233B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7454BDF1178E8CCC00233B14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BDF3178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7454BDF4178E8CCC00233B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7454BDF3178E8CCC00233B14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BDF5178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7454BDF6178E8CCC00233B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7454BDF5178E8CCC00233B14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BDF7178E8CCC00233B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>743AFC8A178E997F00083E50</string>
+				<string>7454BE00178E8CCC00233B14</string>
+				<string>7454BE01178E8CCC00233B14</string>
+				<string>7454BE06178E8CCC00233B14</string>
+				<string>7454BE07178E8CCC00233B14</string>
+				<string>7454BDF8178E8CCC00233B14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ParallaxViewTest</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDF8178E8CCC00233B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7454BDF9178E8CCC00233B14</string>
+				<string>7454BDFA178E8CCC00233B14</string>
+				<string>7454BDFD178E8CCC00233B14</string>
+				<string>7454BDFF178E8CCC00233B14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDF9178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>ParallaxViewTest-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDFA178E8CCC00233B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7454BDFB178E8CCC00233B14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDFB178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDFC178E8CCC00233B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7454BDFA178E8CCC00233B14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BDFD178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BDFE178E8CCC00233B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7454BDFD178E8CCC00233B14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BDFF178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ParallaxViewTest-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BE00178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DVAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BE01178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DVAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BE02178E8CCC00233B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7454BE01178E8CCC00233B14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BE06178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DVViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BE07178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DVViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7454BE08178E8CCC00233B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7454BE07178E8CCC00233B14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7454BE10178E8CCC00233B14</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7454BE1E178E8CCC00233B14</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7454BE1F178E8CCC00233B14</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7454BE20178E8CCC00233B14</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7454BE21178E8CCC00233B14</string>
+				<string>7454BE22178E8CCC00233B14</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7454BE21178E8CCC00233B14</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FBD1615DDE26483A9ACE4DBE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ParallaxViewTest/ParallaxViewTest-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ParallaxViewTest/ParallaxViewTest-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7454BE22178E8CCC00233B14</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>FBD1615DDE26483A9ACE4DBE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ParallaxViewTest/ParallaxViewTest-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ParallaxViewTest/ParallaxViewTest-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.1</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7454BE29178E92A300233B14</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>74B5B88D17A7F15900266FD1</string>
+				<string>74B5B88E17A7F15900266FD1</string>
+				<string>74B5B88F17A7F15900266FD1</string>
+				<string>74B5B87817A7EB8E00266FD1</string>
+				<string>749FE1521794291700249764</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1521794291700249764</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>749FE1531794292600249764</string>
+				<string>749FE1541794292600249764</string>
+				<string>749FE1551794292600249764</string>
+				<string>749FE1561794292600249764</string>
+				<string>749FE1571794292600249764</string>
+				<string>749FE1581794292600249764</string>
+				<string>749FE1591794292600249764</string>
+				<string>749FE15A1794292600249764</string>
+				<string>749FE15B1794292600249764</string>
+				<string>749FE15C1794292600249764</string>
+				<string>749FE15D1794292600249764</string>
+				<string>749FE15E1794292600249764</string>
+				<string>749FE15F1794292600249764</string>
+				<string>749FE1601794292600249764</string>
+				<string>749FE1611794292600249764</string>
+				<string>749FE1621794292600249764</string>
+				<string>749FE1631794292600249764</string>
+				<string>749FE1641794292600249764</string>
+				<string>749FE1651794292600249764</string>
+				<string>749FE1661794292600249764</string>
+				<string>749FE1671794292600249764</string>
+				<string>749FE1681794292600249764</string>
+				<string>749FE1691794292600249764</string>
+				<string>749FE16A1794292600249764</string>
+				<string>749FE16B1794292600249764</string>
+				<string>749FE16C1794292600249764</string>
+				<string>749FE16D1794292600249764</string>
+				<string>749FE16E1794292600249764</string>
+				<string>749FE16F1794292600249764</string>
+				<string>749FE1701794292600249764</string>
+				<string>749FE1711794292600249764</string>
+				<string>749FE1721794292600249764</string>
+				<string>749FE1731794292600249764</string>
+				<string>749FE1741794292600249764</string>
+				<string>749FE1751794292600249764</string>
+				<string>749FE1761794292600249764</string>
+				<string>749FE1771794292600249764</string>
+				<string>749FE1781794292600249764</string>
+				<string>749FE1791794292600249764</string>
+				<string>749FE17A1794292600249764</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>App icons</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1531794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>App-Store.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/App-Store.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1541794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>App-Store@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/App-Store@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1551794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Calculator.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Calculator.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1561794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Calculator@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Calculator@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1571794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Calendar.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Calendar.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1581794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Calendar@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Calendar@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1591794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Camera.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Camera.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE15A1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Camera@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Camera@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE15B1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Clock.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Clock.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE15C1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Clock@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Clock@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE15D1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Contacts.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Contacts.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE15E1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Contacts@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Contacts@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE15F1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>iPod.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/iPod.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1601794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>iPod@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/iPod@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1611794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>iTunes.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/iTunes.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1621794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>iTunes@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/iTunes@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1631794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Mail.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Mail.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1641794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Mail@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Mail@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1651794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Maps.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Maps.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1661794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Maps@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Maps@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1671794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Messages.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Messages.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1681794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Messages@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Messages@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1691794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Notes.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Notes.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE16A1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Notes@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Notes@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE16B1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Phone.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Phone.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE16C1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Phone@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Phone@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE16D1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Photos.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Photos.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE16E1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Photos@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Photos@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE16F1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Safari.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Safari.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1701794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Safari@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Safari@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1711794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Settings.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Settings.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1721794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Settings@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Settings@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1731794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Stocks.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Stocks.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1741794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Stocks@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Stocks@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1751794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Voice-Memos.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Voice-Memos.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1761794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Voice-Memos@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Voice-Memos@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1771794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Weather.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Weather.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1781794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Weather@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Weather@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE1791794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>YouTube.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/YouTube.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE17A1794292600249764</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>YouTube@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/YouTube@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>749FE17B1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1531794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE17C1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1541794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE17D1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1551794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE17E1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1561794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE17F1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1571794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1801794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1581794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1811794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1591794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1821794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE15A1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1831794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE15B1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1841794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE15C1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1851794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE15D1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1861794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE15E1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1871794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE15F1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1881794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1601794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1891794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1611794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE18A1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1621794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE18B1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1631794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE18C1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1641794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE18D1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1651794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE18E1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1661794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE18F1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1671794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1901794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1681794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1911794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1691794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1921794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE16A1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1931794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE16B1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1941794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE16C1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1951794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE16D1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1961794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE16E1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1971794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE16F1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1981794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1701794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1991794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1711794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE19A1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1721794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE19B1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1731794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE19C1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1741794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE19D1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1751794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE19E1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1761794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE19F1794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1771794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1A01794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1781794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1A11794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE1791794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>749FE1A21794292600249764</key>
+		<dict>
+			<key>fileRef</key>
+			<string>749FE17A1794292600249764</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B87817A7EB8E00266FD1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>74B5B87917A7EBAE00266FD1</string>
+				<string>74B5B87A17A7EBAE00266FD1</string>
+				<string>74B5B87B17A7EBAE00266FD1</string>
+				<string>74B5B87C17A7EBAE00266FD1</string>
+				<string>74B5B87D17A7EBAE00266FD1</string>
+				<string>74B5B87E17A7EBAE00266FD1</string>
+				<string>74B5B87F17A7EBAE00266FD1</string>
+				<string>74B5B88017A7EBAE00266FD1</string>
+				<string>74B5B88117A7EBAE00266FD1</string>
+				<string>74B5B88217A7EBAE00266FD1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Space images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B87917A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>earth.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/earth.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B87A17A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>earth@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/earth@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B87B17A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>galaxy.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/galaxy.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B87C17A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>galaxy@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/galaxy@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B87D17A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>galaxy2.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/galaxy2.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B87E17A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>galaxy2@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/galaxy2@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B87F17A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>ios7background.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/ios7background.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B88017A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>ios7background@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/ios7background@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B88117A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>moon.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/moon.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B88217A7EBAE00266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>moon@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/moon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B88317A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B87917A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88417A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B87A17A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88517A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B87B17A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88617A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B87C17A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88717A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B87D17A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88817A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B87E17A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88917A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B87F17A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88A17A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B88017A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88B17A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B88117A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88C17A7EBAE00266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B88217A7EBAE00266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B88D17A7F15900266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Default-568h@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B88E17A7F15900266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Default.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B88F17A7F15900266FD1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>name</key>
+			<string>Default@2x.png</string>
+			<key>path</key>
+			<string>ParallaxViewTest/images/Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74B5B89017A7F15900266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B88D17A7F15900266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B89117A7F15900266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B88E17A7F15900266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74B5B89217A7F15900266FD1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74B5B88F17A7F15900266FD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F37FE44DD6E45AC8457FB4E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>DE2B1EDB1BC042E79F653E12</key>
+		<dict>
+			<key>fileRef</key>
+			<string>689CFEBB4F094A4AAAC30F56</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>FBD1615DDE26483A9ACE4DBE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>7454BDE6178E8CCB00233B14</string>
+</dict>
+</plist>

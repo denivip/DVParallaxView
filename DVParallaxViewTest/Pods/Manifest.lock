@@ -1,0 +1,14 @@
+PODS:
+  - DVParallaxView (0.1.0)
+
+DEPENDENCIES:
+  - DVParallaxView (from `../`)
+
+EXTERNAL SOURCES:
+  DVParallaxView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DVParallaxView: 884fbd577b58b7f3af84368c203fc5156353bca8
+
+COCOAPODS: 0.20.2
