@@ -34,16 +34,6 @@
         [_parallaxView addSubview:moon];
         
         _parallaxView.gyroscopeControl = YES;
-        
-        UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
-        for (int i=0; i<15; ++i) {
-            UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-            button.frame = CGRectMake(25.f+(i%3)*110.f,
-                                      30.f+(i/3)*100.f,
-                                      50.f, 50.f);
-            [button setTitle:[NSString stringWithFormat:@"%d", i+1] forState:UIControlStateNormal];
-            [view addSubview:button];
-        }
         [_parallaxView setFrontView:self.frontView];
     }
     
@@ -56,7 +46,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self.view addSubview:self.parallaxView];
-    [self.view sendSubviewToBack:self.parallaxView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +56,6 @@
 
 -(void)viewDidLayoutSubviews {
     self.parallaxView.frame = self.view.bounds;
-    [self.parallaxView setNeedsLayout];
 }
 
 @end
