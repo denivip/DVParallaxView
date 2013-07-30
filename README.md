@@ -1,7 +1,7 @@
 DVParallaxView
 ==============
 
-DVParallaxView is a subclass of UIView that applies parallax effect on all its subviews. It is controlled by gyroscope in iOS 7 way. You can add views to parallax scene by simply adding them to DVParallaxView subviews. Move views with parallax by simply changing the contentOffset property. The place of view in subviews hierarchy is simultaneously its depth in parallax scene. So when you change contentOffset each view moves on distance defined by its index in subviews array.
+DVParallaxView is a subclass of UIView that applies parallax effect on all its subviews. You can turn on the gyroscope control and use it to make parallax like at home screen of iOS 7. You can add views to parallax scene by simply adding them to DVParallaxView subviews. Move views with parallax by simply changing the contentOffset property or tilting the device if the gyro is on. The place of view in subviews hierarchy is simultaneously it's depth in parallax scene. So when you change contentOffset each view moves on distance defined by it's index in subviews array.
 DVParallaxView is very easy to use. Just plug it to your project, create an instance, add subviews and move it as you want by setting the contentOffset or by changing your phone's orientation. Our parallax view will do all the rest.
 You can read about the concepts of making parallax in this component in our article - http://blog.denivip.ru/index.php/2013/07/%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82-%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B0%D0%BA%D1%81%D0%B0-%D0%B2-ios-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85/.
 
@@ -29,11 +29,13 @@ Just clone this repository or download it in zip-file. Then you will find source
 Just call the addSubview: method.
 `[parallaxView addSubview:view];`
 
+Each added subview will take it's place at parallax scene and will move in parallax with the speed defined by it's position. If you want some views to change it's position at the equal speed you have to add them to one UIView container first, and then add this container to parallax view.
+
 ###Set the Background image###
 You can easily set the background image by calling setBackgroundImage: method. 
 `[parallaxView setBackgroundImage:image];`
 After calling this method background image will appear in parallax view. Independently of the current subviews it will be on the first place of subviews array, thus it will appear behind all views. Also it will have the slowest parallax velocity among all the views.
-Notice that if the background is set parallax will change views coordinates only until the background images come to its edge. Parallax won't move in that direction any further. If background image isn't set - parallax is infinite.
+Notice that if the background is set parallax will change views coordinates only until the background images come to it's edge. Parallax won't move in that direction any further. If background image isn't set - parallax is infinite.
 
 ###Moving subviews (making parallax)###
 To apply an offset with parallax to subviews you must change the contentOffset property value.
