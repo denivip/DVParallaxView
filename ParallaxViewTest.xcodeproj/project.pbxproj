@@ -611,7 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mihail Grushin (NVD9NMZMNS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxViewTest/ParallaxViewTest-Info.plist";
@@ -625,7 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mihail Grushin (NVD9NMZMNS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParallaxViewTest/ParallaxViewTest-Prefix.pch";
 				INFOPLIST_FILE = "ParallaxViewTest/ParallaxViewTest-Info.plist";
