@@ -35,7 +35,7 @@ You can easily set the background image by calling setBackgroundImage: method.
 After calling this method background image will appear in parallax view. Independently of the current subviews it will be on the first place of subviews array, thus it will appear behind all views. Also it will have the slowest parallax velocity among all the views.
 Notice that if the background is set parallax will change views coordinates only until the background images come to its edge. Parallax won't move in that direction any further. If background image isn't set - parallax is infinite.
 
-###Moving subviews###
+###Moving subviews (making parallax)###
 To apply an offset with parallax to subviews you must change the contentOffset property value.
 `CGPoint newOffset = CGPointMake(50.f, 50.f);
 [parallaxView setContentOffset:newOffset];`
