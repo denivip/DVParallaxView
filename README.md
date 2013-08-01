@@ -3,7 +3,7 @@ DVParallaxView
 
 DVParallaxView is a subclass of UIView that applies parallax effect on all its subviews. You can turn on the gyroscope control and use it to make parallax like at home screen of iOS 7. You can add views to parallax scene by simply adding them to DVParallaxView subviews. Move views with parallax by simply changing the contentOffset property or tilting the device if the gyro is on. The place of view in subviews hierarchy is simultaneously it's depth in parallax scene. So when you change contentOffset each view moves on distance defined by it's index in subviews array.
 DVParallaxView is very easy to use. Just plug it to your project, create an instance, add subviews and move it as you want by setting the contentOffset or by changing your phone's orientation. Our parallax view will do all the rest.
-You can read about the concepts of making parallax in this component in our article - http://blog.denivip.ru/index.php/2013/07/%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82-%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B0%D0%BA%D1%81%D0%B0-%D0%B2-ios-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85/.
+You can read about the concepts of making parallax in this component in our article - http://blog.denivip.ru/index.php/2013/08/parallax-in-ios-applications/?lang=en.
 
 ##Required Frameworks##
   - Core Motion
